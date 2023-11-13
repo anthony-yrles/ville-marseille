@@ -1,24 +1,24 @@
 @font-face {
-  font-family: 'orkney';
-  src: url('./assets/orkney-regular.otf');
+  font-family: "orkney";
+  src: url("./assets/orkney-regular.otf");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'orkney';
-  src: url('./assets/orkney-bold.otf');
+  font-family: "orkney";
+  src: url("./assets/orkney-bold.otf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'orkney';
-  src: url('./assets/orkney-medium.otf');
+  font-family: "orkney";
+  src: url("./assets/orkney-medium.otf");
   font-style: medium;
 }
 
 @font-face {
-  font-family: 'orkney';
-  src: url('./assets/orkney-light.otf');
+  font-family: "orkney";
+  src: url("./assets/orkney-light.otf");
   font-style: light;
 }
 
@@ -28,25 +28,7 @@
 }
 
 body {
-    font-family: orkney;
-    
-}
-
-body header {
-  background-color: #64ccc5;
-  display: flex;
-  justify-content: space-between;
-}
-
-body header h1 {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    font-size: 3.5em;
-}
-
-body header img {
-    padding: 1%;
+  font-family: orkney;
 }
 
 body header .burger-menu {
@@ -61,20 +43,14 @@ body header .burger-menu {
 #hamburger-logo {
   cursor: pointer;
   background: #053b50;
-  width: 300px;
   display: block;
   color: white;
   text-align: right;
-  transform: translateX(-280px);
-  padding: 10px;
 }
 
 body header .burger-menu nav {
   background: #053b50;
   overflow: hidden;
-  width: 280px;
-  transform: translateX(-280px);
-  font-size: 1.5em;
 }
 
 #hamburger-logo,
@@ -91,9 +67,184 @@ body header .burger-menu nav a {
   display: block;
   color: white;
   text-decoration: none;
-  padding: 10px;
 }
 
 body header .burger-menu nav a:hover {
-  background: #64CCC5;  
+  background: #053b50;
+}
+
+body header .bandeau {
+  background-color: #64ccc5;
+  display: flex;
+}
+
+body header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+body header .bandeau img {
+  padding: 1%;
+}
+
+body header .frise {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body header .frise p {
+  width: 50%;
+  padding: 1%;
+  border: solid 4px #176B87;
+  border-radius: 20px;
+  background-color: #F8F9F1 ;
+  opacity: 0.5;
+  text-align: center;
+  margin-right: 25%;
+}
+
+@media only screen and (max-width: 480px) {
+  #hamburger-logo {
+    width: 90px;
+    transform: translateX(-70px);
+    padding: 5px;
+  }
+
+  body header .burger-menu nav {
+    width: 100px;
+    transform: translateX(-100px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 10px;
+  }
+  body header h1 {
+    font-size: 2em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 50px;
+  }
+
+  body header .frise {
+    background-image: url(./assets/accueil/panorama-mini.jpg);
+    height: 100px;
+  }
+  body header .frise img {
+    width: 25px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #hamburger-logo {
+    width: 135px;
+    transform: translateX(-115px);
+    padding: 7.5px;
+    font-size: 1.2em;
+  }
+
+  body header .burger-menu nav {
+    width: 150px;
+    transform: translateX(-150px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 15px;
+  }
+
+  body header h1 {
+    font-size: 2.5em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 75px;
+  }
+
+  body header .frise {
+    background-image: url(./assets/accueil/panorama-medium.jpg);
+    height: 150px;
+  }
+
+  body header .frise img {
+    width: 32.5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #hamburger-logo {
+    width: 202.5px;
+    transform: translateX(-187.5px);
+    padding: 11.25px;
+    font-size: 1.4em;
+  }
+
+  body header .burger-menu nav {
+    width: 225px;
+    transform: translateX(-225px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 22.5px;
+    font-size: 2em;
+  }
+
+  body header h1 {
+    font-size: 3.7em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 112.5px;
+  }
+
+  body header .frise {
+    background-image: url(./assets/accueil/panorama-normal.jpg);
+    height: 225px;
+  }
+
+  body header .frise img {
+    width: 48.75px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  #hamburger-logo {
+    width: 303.75px;
+    transform: translateX(-286.25px);
+    padding: 16.87px;
+    font-size: 1.4em;
+  }
+
+  body header .burger-menu nav {
+    width: 337.5px;
+    transform: translateX(-337.5px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 33.75px;
+    font-size: 2.5em;
+  }
+
+  body header h1 {
+    font-size: 5.55em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 168.75px;
+  }
+
+  body header .frise {
+    background-image: url(./assets/accueil/panorama-normal.jpg);
+    height: 337.5px;
+  }
+
+  body header .frise img {
+    width: 73.125px;
+  }
 }

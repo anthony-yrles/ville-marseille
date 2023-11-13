@@ -112,8 +112,13 @@ body {
 }   
 .titre-principal h2{
     font-size: 3vw;
+    /* margin-left: 25%; */
+    background-color: #053B50;
+    padding: 1%;
+    padding-left: 27%;
+    border-radius: 25px;
     font-style: bold;
-    color: #176B87;
+    color: white;
 }   
 
 .citation{

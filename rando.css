@@ -49,12 +49,16 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .image-container img {
@@ -72,7 +76,7 @@ li {
     margin: 0;
 }
 .grid-item h2 {
-    margin-bottom: 10px; /* Ajoutez la marge souhaitée entre le titre et le texte en dessous */
+    margin-bottom: 10px;
 }
 
 .grid-item p {

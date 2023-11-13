@@ -212,6 +212,7 @@ body header .frise p {
     width: 48.75px;
   }
 }
+
 @media only screen and (min-width: 1023px) {
   #hamburger-logo {
     width: 303.75px;

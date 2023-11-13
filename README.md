@@ -12,6 +12,6 @@ Charte graphique :
  
  Repartition des roles:
 
- - William / Parc plage rando
- - Barbaba / Histoire Musées contact
- - Anthony / Accueil header footer bouton
+ - William / parc plage rando
+ - Barbaba / histoire Musées contact
+ - Anthony / accueil header footer bouton

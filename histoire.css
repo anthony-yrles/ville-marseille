@@ -1,3 +1,5 @@
+/*  */
+
 @font-face {
     font-family: 'orkney';
     src: url('./assets/orkney-regular.otf');
@@ -22,9 +24,137 @@
     font-style: light;
 }
 
-header .background-musee{
-    background-image: url(./assets/photo-musee/peinture-marseille-ancien.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow:visible; */
 }
+
+body {
+    font-family: orkney;
+    height: 100%;
+}
+
+.container-gauche {
+    position: fixed;
+    z-index:-1;
+    top: 0;
+    left: 0;
+    width: 40vw; 
+    height: 100vh; 
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+}
+
+.container-gauche img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.container-droite{
+    /* background-color: #176B87; */
+    margin:5%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: right;
+    max-width: 70vw;
+}
+
+.glass {
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    /* background-color: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); */
+    border-radius: 50px;
+    padding: 5%;
+    margin:2%;
+    box-shadow: rgba(5, 59, 80, 0.4) 5px 5px, rgba(5, 59, 80, 0.3) 10px 10px, rgba(5, 59, 80, 0.2) 15px 15px, rgba(5, 59, 80, 0.1) 20px 20px, rgba(5, 59, 80, 0.05) 25px 25px;
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.titre-numero{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    color: #176B87;
+}
+
+.titre-numero #mega-num{
+    align-items: end;
+    font-size: 18em;
+    margin-bottom: 0;
+    color: rgb(5, 59, 80);
+}
+
+.container-histoire{
+    margin-top: 5%;
+    float: right;
+}
+
+.container-histoire figure img{
+    max-width: 35%;
+}
+.titre-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    overflow:visible;
+    /* margin-top: 0; */
+}
+
+.titre-principal h1{
+    margin-right: 16%;
+    font-size: 13vw;
+    font-style: bold;
+    color: rgb(5, 59, 80);
+}   
+.titre-principal h2{
+    font-size: 3vw;
+    font-style: bold;
+    color: #176B87;
+}   
+
+.citation{
+    display: flex;
+    padding:1%;
+    margin:2%;
+    justify-content: center;
+}
+
+
+.citation p i{
+    color: #176B87;
+    font-size: 15px;
+}
+.citation p strong{
+    color: #053B50;
+}
+
+
+
+/* Styles pour les très petits écrans (par exemple, montres intelligentes) */
+/* Styles spécifiques pour les très petits écrans */
+/* @media only screen and (max-width: 480px) {
+} */
+
+/* Styles pour les petits écrans (mobiles) */
+/* Styles spécifiques pour les petits écrans (mobiles) */
+/* @media only screen and (min-width: 481px) and (max-width: 767px) {
+} */
+
+/* Styles pour les écrans de taille moyenne (tablettes) */
+/* Styles spécifiques pour les écrans de taille moyenne (tablettes) */
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+} */
+
+/* Styles pour les écrans larges (ordinateurs portables) */
+/* Styles spécifiques pour les écrans larges (ordinateurs portables) */
+/* @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+} */
+
+/* Styles pour les grands écrans (ordinateurs de bureau) */
+/* Styles spécifiques pour les grands écrans (ordinateurs de bureau) */
+/* @media only screen and (min-width: 1280px) {
+} */

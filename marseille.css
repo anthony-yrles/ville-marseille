@@ -107,47 +107,45 @@ body header .frise input {
   height: 20px;
 }
 
-footer .icon-footer {
-  background-color:  #64ccc5;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "marseille marseille"
-  "allo oreille"
-  "sortir plan";
+footer {
+  background-color: #64ccc5;
+  padding: 1%;
 }
 
-footer .icon-footer .marseille {
-  grid-area: marseille;
-  justify-self: center;
-  align-self: center;
+footer .fond-footer {
+  position: relative;
 }
 
-footer .icon-footer .allo {
-  grid-area: allo;
-  justify-self: center;
-  align-self: center;
+footer .fond-footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 150%;
+  height: 100%;
+  background-image: url(./assets/accueil/fondfooter2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
 }
 
-footer .icon-footer .oreille {
-  grid-area: oreille;
-  justify-self: center;
-  align-self: center;
+footer .fond-footer img {
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+  margin: auto;
 }
 
-footer .icon-footer .sortir {
-  grid-area: sortir;
-  justify-self: center;
-  align-self: center;
+footer .fond-footer .icon-footer {
+  display: flex;
+  justify-content: space-around;
 }
 
-footer .icon-footer .plan {
-  grid-area: plan;
-  justify-self: center;
-  align-self: center;
+footer .fond-footer p {
+  font-size: 12px;
+  text-align: center;
+  padding: 1%;
 }
-
 
 @media only screen and (max-width: 480px) {
   #hamburger-logo {
@@ -181,6 +179,10 @@ footer .icon-footer .plan {
 
   body header .frise img {
     width: 25px;
+  }
+  
+  footer .fond-footer::after {
+    background-image: url(./assets/accueil/fondfooter-medium.png);
   }
 }
 
@@ -222,6 +224,29 @@ footer .icon-footer .plan {
   body header .frise input {
     height: 28px;
     font-size: 18px;
+  }
+
+  footer .fond-footer::after {
+    width: 100%;
+    height: 110%;
+  }
+
+  footer .fond-footer img {
+    width: 180px;
+  }
+
+  footer .fond-footer .icon-footer img {
+    width: 90px;
+  }
+
+  footer .fond-footer .icon-footer .plan img{
+    width: 60px;
+  }
+
+  footer .fond-footer p {
+    font-size: 18px;
+    text-align: center;
+    padding: 3%;
   }
 }
 
@@ -265,6 +290,33 @@ footer .icon-footer .plan {
     height: 43px;
     font-size: 25px;
   }
+
+  footer {
+    padding: 3%;
+  }
+
+  footer .fond-footer::after {
+    width: 100%;
+    height: 120%;
+  }
+
+  footer .fond-footer img {
+    width: 210px;
+  }
+
+  footer .fond-footer .icon-footer img {
+    width: 105px;
+  }
+
+  footer .fond-footer .icon-footer .plan img{
+    width: 70px;
+  }
+
+  footer .fond-footer p {
+    font-size: 22px;
+    text-align: center;
+    padding: 5%;
+  }
 }
 
 @media only screen and (min-width: 1023px) {
@@ -306,5 +358,27 @@ footer .icon-footer .plan {
   body header .frise input {
     height: 60px;
     font-size: 40px;
+  }
+
+  footer .fond-footer::after {
+    width: 100%;
+  }
+
+  footer .fond-footer img {
+    width: 240px;
+  }
+
+  footer .fond-footer .icon-footer img {
+    width: 120px;
+  }
+
+  footer .fond-footer .icon-footer .plan img{
+    width: 80px;
+  }
+
+  footer .fond-footer p {
+    font-size: 26px;
+    text-align: center;
+    padding: 7%;
   }
 }

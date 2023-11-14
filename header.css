@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "orkney";
+    src: url("./assets/orkney-regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "orkney";
+    src: url("./assets/orkney-bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "orkney";
+    src: url("./assets/orkney-medium.otf");
+    font-style: medium;
+}
+
+@font-face {
+    font-family: "orkney";
+    src: url("./assets/orkney-light.otf");
+    font-style: light;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: orkney;
+}
+
+body header {
+    display: flex;
+}
+
+body header .bandeaux {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+body header .burger-menu {
+    position: fixed;
+    width: 0px;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger-logo {
+    cursor: pointer;
+    background: #053b50;
+    display: block;
+    color: white;
+    text-align: right;
+}
+
+body header .burger-menu nav {
+    background: #053b50;
+    overflow: hidden;
+    font-size: 8px;
+}
+
+#hamburger-logo,
+nav {
+    transition: 0.7s;
+}
+
+#hamburger:checked~#hamburger-logo,
+#hamburger:checked~nav {
+    transform: translate(0px);
+}
+
+body header .burger-menu nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+body header .burger-menu nav a:hover {
+    background: #053b50;
+}
+
+body header .recherche input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: solid 4px #176B87;
+    border-radius: 20px;
+    background-color: #F8F9F1;
+    opacity: 0.5;
+    text-align: center;
+    height: 20px;
+    position: static;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    #hamburger-logo {
+        width: 70px;
+        transform: translateX(-50px);
+        padding: 5px;
+    }
+
+    body header .burger-menu nav {
+        width: 80px;
+        transform: translateX(-80px);
+    }
+
+    body header .burger-menu nav a {
+        padding: 10px;
+    }
+
+    body header .bandeaux .reseaux {
+        padding-top: 1%;
+        padding-left: 5%;
+    }
+
+    body header .bandeaux .reseaux a img {
+        width: 20px;
+    }
+
+    body header .bandeaux img {
+        width: 38.25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    #hamburger-logo {
+        width: 90px;
+        transform: translateX(-80px);
+        padding-left: 14px;
+        font-size: 20px;
+    }
+
+    body header .burger-menu nav {
+        width: 111px;
+        transform: translateX(-111px);
+    }
+
+    body header .burger-menu nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    body header .bandeaux .reseaux {
+        padding-left: 5%;
+    }
+
+    body header .bandeaux .reseaux a img {
+        width: 30px;
+    }
+
+    body header .bandeaux img {
+        width: 49px;
+        height: 32.5px;
+    }
+
+    body header .recherche input {
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #hamburger-logo {
+        width: 120px;
+        transform: translateX(-110px);
+        padding-left: 20px;
+        font-size: 26px;
+    }
+
+    body header .burger-menu nav {
+        width: 151px;
+        transform: translateX(-151px);
+    }
+
+    body header .burger-menu nav a {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    body header .bandeaux .reseaux {
+        padding-left: 5%;
+    }
+
+    body header .bandeaux .reseaux a img {
+        width: 45px;
+    }
+
+    body header .bandeaux img {
+        width: 74.58px;
+        height: 48.75;
+    }
+
+    body header .recherche input {
+        height: 45px;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    #hamburger-logo {
+        width: 170px;
+        transform: translateX(-150px);
+        padding-left: 25px;
+        font-size: 32px;
+    }
+
+    body header .burger-menu nav {
+        width: 212px;
+        transform: translateX(-212px);
+    }
+
+    body header .burger-menu nav a {
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    body header h1 {
+        font-size: 5.55em;
+        margin: 2% 0% 0% 11%;
+    }
+
+    body header .bandeaux .reseaux {
+        padding-left: 5%;
+    }
+
+    body header .bandeaux .reseaux a img {
+        width: 68px;
+    }
+
+    body header .bandeaux img {
+        width: 111.69px;
+        height: 73px;
+    }
+
+    body header .recherche input {
+        height: 68px;
+    }
+}

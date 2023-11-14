@@ -354,3 +354,21 @@ li {
         padding: 0px;
 }
 }
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        background-color: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+}

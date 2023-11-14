@@ -85,18 +85,22 @@ body header .burger-menu nav a:hover {
     background: #053b50;
 }
 
-body header p {
+body header .recherche input {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 100%;
     border: solid 4px #176B87;
     border-radius: 20px;
     background-color: #F8F9F1;
     opacity: 0.5;
     text-align: center;
-    font-size: 12px;
+    height: 20px;
+    position: static;
 }
+
+
+
 
 @media only screen and (max-width: 480px) {
     #hamburger-logo {
@@ -115,6 +119,7 @@ body header p {
     }
 
     body header .bandeaux .reseaux {
+        padding-top: 1%;
         padding-left: 5%;
     }
 
@@ -123,7 +128,8 @@ body header p {
     }
 
     body header .bandeaux img {
-        width: 25px;
+        width: 38.25px;
+        height: 25px;
     }
 }
 
@@ -150,15 +156,16 @@ body header p {
     }
 
     body header .bandeaux .reseaux a img {
-        width: 32.5px;
+        width: 30px;
     }
 
     body header .bandeaux img {
-        width: 32.5px;
+        width: 49px;
+        height: 32.5px;
     }
 
-    body header p {
-        font-size: 16px;
+    body header .recherche input {
+        height: 30px;
     }
 }
 
@@ -185,15 +192,16 @@ body header p {
     }
 
     body header .bandeaux .reseaux a img {
-        width: 48.75px;
+        width: 45px;
     }
 
     body header .bandeaux img {
-        width: 48.75px;
+        width: 74.58px;
+        height: 48.75;
     }
 
-    body header p {
-        font-size: 22px;
+    body header .recherche input {
+        height: 45px;
     }
 }
 
@@ -225,14 +233,15 @@ body header p {
     }
 
     body header .bandeaux .reseaux a img {
-        width: 73.125px;
+        width: 68px;
     }
 
     body header .bandeaux img {
-        width: 73.125px;
+        width: 111.69px;
+        height: 73px;
     }
 
-    body header p {
-        font-size: 26px;
+    body header .recherche input {
+        height: 68px;
     }
 }

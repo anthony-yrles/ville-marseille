@@ -74,7 +74,7 @@ body header .burger-menu nav a:hover {
 }
 
 body header .bandeau {
-  background-color: #64ccc5;
+  /* background-color: #64ccc5; */
   display: flex;
 }
 

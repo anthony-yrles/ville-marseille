@@ -1,0 +1,8 @@
+.musee-page{
+    background-image: url('./assets/photo-histoire/titre-musee.jpg');
+    display: flex;
+    background-attachment: fixed;
+    /* background-position-y: -600px; */
+    /* background-position-x: -600px; */
+    background-size: cover;
+}

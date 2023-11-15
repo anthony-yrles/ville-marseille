@@ -1,12 +1,12 @@
 body {
-    text-align: center;
-    background-color: #F8F9F1 ;
+  text-align: center;
+  background-color: #f8f9f1;
 }
 
 main .button {
-    display: flex;
-    justify-content: space-around;
-    margin: 3%;
+  display: flex;
+  justify-content: space-around;
+  margin: 3%;
 }
 
 main .button .button-86 {
@@ -32,19 +32,20 @@ main .button .button-86 {
 
 main .button .button-86::after,
 main .button .button-86::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -99999;
-  transition: all .4s;
+  transition: all 0.4s;
+  width: 60%;
 }
 
 main .button .button-86::before {
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  background: #176B87;
+  background: #176b87;
   border-radius: 10px;
 }
 
@@ -52,7 +53,7 @@ main .button .button-86::after {
   transform: translate(10px, 10px);
   width: 35px;
   height: 35px;
-  background: #64CCC5;
+  background: #64ccc5;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
@@ -69,6 +70,7 @@ main .button .button-86:hover::after {
   transform: translate(0, 0);
   width: 100%;
   height: 100%;
+  color: #0056b3;
 }
 
 main .button .button-86:active::after {
@@ -119,18 +121,254 @@ main .button .modal .close-btn {
   z-index: 0;
 }
 
-/* Lien pour ouvrir le modal */
-.button-86 {
-  cursor: pointer;
-  color: #007BFF;
-  text-decoration: underline;
-}
-
-.button-86:hover {
-  color: #0056b3;
-}
-
 /* Lien pour fermer le modal */
 main .button .modal a:target {
   display: none;
+}
+
+main .sur-place {
+  margin: 2%;
+  border: solid 2px #176b87;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+main .sur-place .image-container {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+main .sur-place .image-container {
+  height: 200px;
+}
+
+main .sur-place .image-container .hover {
+  display: none;
+}
+
+main .sur-place .image-container .normal:hover {
+  display: none;
+}
+
+main .sur-place .image-container img.normal:hover ~ .hover {
+  display: inline-block;
+  border-radius: 25px;
+  border: solid black;
+}
+
+main .sur-place h1 {
+  font-size: 34px;
+  padding: 2%;
+  color: #176b87;
+}
+
+main .sur-place h2 {
+  font-size: 20px;
+  padding: 3%;
+  color: #64ccc5;
+}
+main .sur-place .arrondissements {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+main .sur-place .arrondissements img {
+  margin: 4% 0%;
+  border: #0056b3 solid;
+}
+
+main .sur-place .arrondissements .un-sept {
+  display: none;
+}
+
+main .sur-place .arrondissements .un:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .un:hover ~ .un-sept {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .sur-place .arrondissements .deux-trois {
+  display: none;
+}
+
+main .sur-place .arrondissements .deux:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .deux:hover ~ .deux-trois {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .sur-place .arrondissements .quatre-cinq {
+  display: none;
+}
+
+main .sur-place .arrondissements .quatre:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .quatre:hover ~ .quatre-cinq {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .sur-place .arrondissements .six-huit {
+  display: none;
+}
+
+main .sur-place .arrondissements .six:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .six:hover ~ .six-huit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .sur-place .arrondissements .neuf-dix {
+  display: none;
+}
+
+main .sur-place .arrondissements .neuf:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .neuf:hover ~ .neuf-dix {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .sur-place .arrondissements .onze-douze {
+  display: none;
+}
+
+main .sur-place .arrondissements .onze:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .onze:hover ~ .onze-douze {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .sur-place .arrondissements .treize-quatorze {
+  display: none;
+}
+
+main .sur-place .arrondissements .treize:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .treize:hover ~ .treize-quatorze {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .sur-place .arrondissements .quinze-seize {
+  display: none;
+}
+
+main .sur-place .arrondissements .quinze:hover {
+  display: none;
+}
+
+main .sur-place .arrondissements .quinze:hover ~ .quinze-seize {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  main .sur-place h1 {
+    font-size: 50px;
+  }
+
+  main .sur-place .image-container {
+    height: 300px;
+  }
+
+  main .sur-place .image-container img {
+    width: 400px;
+  }
+
+  main .sur-place h2 {
+    font-size: 35px;
+  }
+
+  main .sur-place .arrondissements img {
+    width: 450px;
+  }
+
+  main .sur-place .arrondissements section img {
+    width: 300px;
+  }
+
+  main .sur-place .arrondissements section p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main .sur-place h1 {
+    font-size: 80px;
+  }
+
+  main .sur-place .image-container {
+    height: 400px;
+  }
+
+  main .sur-place .image-container img {
+    width: 500px;
+  }
+
+  main .sur-place .grid-query {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 18px;
+  }
+  main .sur-place .grid-query h2 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  main .sur-place h1 {
+    font-size: 100px;
+  }
+
+  main .sur-place .image-container {
+    height: 600px;
+  }
+
+  main .sur-place .image-container img {
+    width: 700px;
+  }
+
+  main .sur-place .grid-query {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 20px;
+  }
+
+  main .sur-place .grid-query h2 {
+    font-size: 45px;
+  }
 }

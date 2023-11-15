@@ -112,7 +112,7 @@ footer {
   background-image: url(../assets/accueil/fondfootermini.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 130px;
+  height: 135px;
 }
 
 footer img {
@@ -217,11 +217,15 @@ footer p {
 
   footer {
     background-image: url(../assets/accueil/fondfooter.jpg);
-    height: 172px;
+    height: 180px;
   }
 
   footer .icon-footer img {
     width: 45px;
+  }
+
+  footer .icon-footer .oreille img {
+    width: 22.5px;
   }
 
   footer .icon-footer .plan img {
@@ -287,6 +291,10 @@ footer p {
     width: 90px;
   }
 
+  footer .icon-footer .oreille img {
+    width: 45px;
+  }
+
   footer .icon-footer .plan img {
     width: 60px;
   }
@@ -348,15 +356,18 @@ footer p {
   }
 
   footer .icon-footer img {
+    width: 120px;
+  }
+
+  footer .icon-footer .oreille img {
+    width: 72.5px;
+  }
+  footer .icon-footer .plan img {
     width: 90px;
   }
 
-  footer .icon-footer .plan img {
-    width: 60px;
-  }
-
   footer p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
   }
 }

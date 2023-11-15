@@ -1,0 +1,86 @@
+body {
+    background-image: url('assets/photo-plage/fond.jpg');
+    background-size: cover;
+    background-position: center ; /* Ajustez cette valeur selon vos besoins */
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+main .plage-prado {
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    backdrop-filter: blur(20px); /* Effet glass avec flou */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #3498db;
+}
+
+p {
+    color: #191919;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+main .plage-prado {
+    max-width: 800px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+}
+
+.activities,
+.amenities {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.activities ul,
+.amenities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activities h2,
+.amenities h2 {
+    color: #3498db;
+}
+
+.activities li,
+.amenities li {
+    margin-bottom: 50px;
+}
+.description {
+    height: 100%;
+}
+
+/* Plage 2 */
+

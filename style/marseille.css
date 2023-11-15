@@ -1,24 +1,24 @@
 @font-face {
   font-family: "orkney";
-  src: url("./assets/orkney-regular.otf");
+  src: url("../assets/orkney-regular.otf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "orkney";
-  src: url("./assets/orkney-bold.otf");
+  src: url("../assets/orkney-bold.otf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "orkney";
-  src: url("./assets/orkney-medium.otf");
+  src: url("../assets/orkney-medium.otf");
   font-style: medium;
 }
 
 @font-face {
   font-family: "orkney";
-  src: url("./assets/orkney-light.otf");
+  src: url("../assets/orkney-light.otf");
   font-style: light;
 }
 
@@ -109,7 +109,7 @@ body header .frise input {
 
 footer {
   position: relative;
-  background-image: url(./assets/accueil/fondfootermini.jpg);
+  background-image: url(../assets/accueil/fondfootermini.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 130px;
@@ -166,7 +166,7 @@ footer p {
   }
 
   body header .frise {
-    background-image: url(./assets/accueil/panorama-mini.jpg);
+    background-image: url(../assets/accueil/panorama-mini.jpg);
     height: 100px;
   }
 
@@ -202,7 +202,7 @@ footer p {
   }
 
   body header .frise {
-    background-image: url(./assets/accueil/panorama-medium.jpg);
+    background-image: url(../assets/accueil/panorama-medium.jpg);
     height: 150px;
   }
 
@@ -216,7 +216,7 @@ footer p {
   }
 
   footer {
-    background-image: url(./assets/accueil/fondfooter.jpg);
+    background-image: url(../assets/accueil/fondfooter.jpg);
     height: 172px;
   }
 
@@ -262,7 +262,7 @@ footer p {
   }
 
   body header .frise {
-    background-image: url(./assets/accueil/panorama-normal.jpg);
+    background-image: url(../assets/accueil/panorama-normal.jpg);
     height: 225px;
   }
 
@@ -325,7 +325,7 @@ footer p {
   }
 
   body header .frise {
-    background-image: url(./assets/accueil/panorama-normal.jpg);
+    background-image: url(../assets/accueil/panorama-normal.jpg);
     height: 337.5px;
   }
 
@@ -339,7 +339,7 @@ footer p {
   }
 
   footer {
-    background-image: url(./assets/accueil/fondfooter.jpg);
+    background-image: url(../assets/accueil/fondfooter.jpg);
     height: 400px;
   }
 

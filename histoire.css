@@ -203,12 +203,10 @@ main .container-droite .container-histoire .citation p strong {
     }
 
     main .container-droite .container-histoire .citation{
-
-        text-align: center;
         /* width: 90%; */
         margin-top: 10%;
         overflow: scroll;
-        height:200px;
+        max-height:200px;
     }
 
     main .container-droite .container-histoire .citation p {

@@ -1,453 +1,110 @@
 body {
-    background-image: url('../assets/photo-plage/fond.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
+  background-image: url("../assets/photo-plage/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color:#f8f9f1;
+  margin-top: 20px;
 }
 
 main .plage-prado {
-    /* max-width: 800px; */
-    margin: 20px;
-    padding: 20px;
-    backdrop-filter: blur(20px);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
-    border-radius: 8px;
-    /* display: flex; */
-    text-align: center;
+  width: 70%;
+  margin: 10% auto;
+  padding: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #f8f9f1;
+  border-radius: 8px;
+  text-align: center;
 }
 
-/* 
-section {
-    margin-bottom: 20px;
-} */
+h2,
+h3 {
+  color: #3498db;
+}
 
-h1,
 h2 {
-    color: #3498db;
-}
-
-/* 
-p {
-    color: #191919;
-    line-height: 1.6;
-} */
-
-ul {
-    list-style: none;
-    /* padding: 0; */
-}
-
-/* li {
-    margin-bottom: 5px;
-} */
-/* 
-footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-} */
-
-body main .plage-prado .activities,
-body main .plage-prado .amenities {
-    flex: 1;
-    /* margin-right: 20px; */
+  font-size: 30px;
 }
 
 main .plage-prado .description p {
-    /* color: #191919; */
-    font-size: 15px;
-    /* margin-bottom: 10px; */
+  font-size: 15px;
+  padding: 15px 0px;
 }
 
-/* .activities ul,
-.amenities ul {
-    list-style: none;
-    padding: 0;
-} */
+h3 {
+  font-size: 22px;
+  padding-top: 10px;
+}
 
-/* .activities h2,
-.amenities h2 {
-    color: #3498db;
-} */
-/* 
-.activities li,
-.amenities li {
-    margin-bottom: 50px;
-} */
-/* .description {
-    height: 100%;
-} */
+ul {
+  list-style: none;
+}
 
-/* Plage 3 */
-/* 
-main .plage-prophete {
-    max-width: 800px;
-    margin: 20px;
-    padding: 25px;
-    position: left;
-    display: flex;
-} */
-/* 
-.main .plage-prophete {
-    max-width: 900px;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-} */
-/* 
-.top-left {
-    position: absolute;
-    top: 150px;
-    right: 20px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
-    backdrop-filter: blur(20px);
-} */
-
-/* Plage 4 */
-/* 
-main .plage-catalans {
-    max-width: 800px;
-    margin: 20px;
-    padding: 25px;
-    position: left;
-    display: flex;
-} */
-/* 
-.main .plage-catalans {
-    max-width: 900px;
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 8px;
-} */
-/* 
-.top-right {
-    position: absolute;
-    top: 630px;
-    right: 20px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
-    backdrop-filter: blur(20px);
-} */
-
-
-/* Plage 6 */
-/* 
-main .plage-huveaune {
-    max-width: 800px;
-    margin: 20px;
-    padding: 25px;
-    position: left;
-    display: flex;
-} */
-/* 
-.main .plage-huveaune {
-    max-width: 900px;
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 8px;
-} */
-/* 
-.plage-huveaune {
-    position: absolute;
-    top: 630px;
-    right: 20px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
-    backdrop-filter: blur(20px);
-} */
-
-/* Plage 7 */
-/* 
-main .plage-bonneveine {
-    max-width: 800px;
-    margin: 20px;
-    padding: 25px;
-    position: left;
-    display: flex;
-} */
-/* 
-.main .plage-bonneveine {
-    max-width: 900px;
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 8px;
-} */
-/* 
-.plage-bonneveine {
-    position: absolute;
-    top: 1145px;
-    right: 0px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
-    backdrop-filter: blur(20px);
-    color: #000000;
-} */
-
-
-/* Plage 3 - Prado */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    main .plage-prado {
-        /* max-width: 100%; */
-        /* margin: 20px; */
-        /* margin-left: 13%; */
-        /* text-align: center; */
-        /* padding: 20px; */
-        /* border-radius: 8px; */
-        /* position: relative; */
-        /* display: flex; */
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        /* flex-direction: column; */
-        background-color: #F8F9F1;
-        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Ombre trop trop legère invisible */
-        width: 70%;
-        margin: 10% auto;
-    }
+  main .plage-prado .description {
+    margin-bottom: 20px;
+  }
 
-    /* #plage {
-        margin-left: 5%;
-    }
- */
-    main .plage-prado .description {
-        margin-bottom: 20px;
-    }
+  h1 {
+    font-size: 60px;
+  }
 
-    main .plage-prado .description img {
-        /* max-width: 100%; */
-        /* height: auto; */
-        border-radius: 8px;
-    }
+  h2 {
+    font-size: 45px;
+  }
 
-    /* 
-    .plage-prado .activities,
-    .plage-prado .amenities {
-        margin-right: 0;
-    } */
+  main .plage-prado .description p {
+    font-size: 18px;
+    padding: 20px 0px;
+  }
 
-    /* .plage-prado h2 {
-        color: #3498db;
-        margin-bottom: 10px;
-    } */
+  h3 {
+    font-size: 33px;
+    padding-top: 10px;
+  }
 
-    /* main .plage-prado .description p {
-        color: #191919;
-        line-height: 1.6;
-        margin-bottom: 10px;
-    } */
-
-    /* .plage-prado ul {
-        padding-left: 20px;
-    } */
-
-    .plage-prado li {
-        margin-bottom: 10px;
-    }
+  main .plage-prado .description img {
+    width: 300px;
+  }
 }
 
-/* Plage 4 - Prophète */
-/* @media only screen and (min-width: 481px) and (max-width: 767px) {
-    main .plage-prophete {
-        max-width: 100%;
-        margin: 20px;
-        text-align: center;
-        padding: 20px;
-        border-radius: 8px;
-        position: relative;
-        display: flex;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    } */
-/* 
-    .plage-prophete .description {
-        margin-bottom: 20px;
-    }
+@media only screen and (min-width: 768px) {
+  body main .grid-plages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 
-    .plage-prophete .description img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    .plage-prophete .activities,
-    .plage-prophete .amenities {
-        margin-right: 0;
-    }
-
-    .plage-prophete h2 {
-        color: #3498db;
-        margin-bottom: 10px;
-    }
-
-    .plage-prophete p {
-        color: #191919;
-        line-height: 1.6;
-        margin-bottom: 10px;
-    }
-
-    .plage-prophete ul {
-        padding-left: 20px;
-    }
-
-    .plage-prophete li {
-        margin-bottom: 10px;
-    } */
-
-.top-left {
-    position: absolute;
-    top: 150px;
-    right: 0px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
+  main .grid-plages .plage-prado {
+    background-color: transparent;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 30% 95%, 10% 100%, 10% 95%, 0% 95%);
     backdrop-filter: blur(20px);
+  }
+
+  main .grid-plages .medium {
+    background-color: #F8F9F1 ;
+  }
+
+  main .grid-plages .plage-prado h2 {
+    font-size: 22px;
+  }
+
+  main .grid-plages .plage-prado .description p {
+    font-size: 11px;
+  }
+
+  h3 {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+
+  main .grid-plages .plage-prado li {
+    font-size: 11px;
+  }
 }
-
-/* } */
-
-/* Plage 5 - Catalans */
-/* @media only screen and (min-width: 481px) and (max-width: 767px) {
-    main .plage-catalans {
-        max-width: 100%;
-        margin: 20px;
-        border-radius: 8px;
-        position: relative;
-        text-align: center;
-        display: flex;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .plage-catalans .description {
-        margin-bottom: 20px;
-    }
-
-    .plage-catalans .description img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    .plage-catalans .activities,
-    .plage-catalans .amenities {
-        margin-right: 0;
-    }
-
-    .plage-catalans h2 {
-        color: #3498db;
-        margin-bottom: 10px;
-    }
-
-    .plage-catalans p {
-        color: #191919;
-        line-height: 1.6;
-        margin-bottom: 10px;
-    }
-
-    .plage-catalans ul {
-        padding-left: 20px;
-    }
-
-    .plage-catalans li {
-        margin-bottom: 10px;
-    } */
-
-.top-right {
-    position: absolute;
-    top: 630px;
-    right: 0px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 10.1% 91.3%, 10% 75%, 0% 75%);
-    backdrop-filter: blur(20px);
-}
-
-/* } */
-
-/* Plage 6 - Huveaune */
-/* @media only screen and (min-width: 481px) and (max-width: 767px) {
-    main .plage-huveaune {
-        max-width: 100%;
-        margin: 30px;
-        border-radius: 8px;
-        position: relative;
-        display: flex;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .plage-huveaune .description {
-        margin-bottom: 20px;
-    }
-
-    .plage-huveaune .description img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    .plage-huveaune .activities,
-    .plage-huveaune .amenities {
-        margin-right: 0;
-    }
-
-    .plage-huveaune h2 {
-        color: #3498db;
-        margin-bottom: 10px;
-    }
-
-    .plage-huveaune p {
-        color: #191919;
-        line-height: 1.6;
-        margin-bottom: 10px;
-    }
-
-    .plage-huveaune ul {
-        padding-left: 20px;
-    }
-
-    .plage-huveaune li {
-        margin-bottom: 10px;
-    }
-} */
-
-/* Plage 7 - Bonneveine */
-/* @media only screen and (min-width: 481px) and (max-width: 767px) {
-        main {
-            height: 6000px;
-        }
-
-        main .plage-bonneveine {
-            max-width: 100%;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            position: relative;
-            text-align: center;
-            display: flex;
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-            flex-direction: column;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .plage-bonneveine .description {
-            margin-bottom: 20px;
-        }
-
-        .plage-bonneveine .description img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .plage-bonneveine .activities,
-        .plage-bonneveine .amenities {
-            margin-right: 0;
-        }
-    } */
-
-
-/* 441 lignes de codes avant nettoyage */

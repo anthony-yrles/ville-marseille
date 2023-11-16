@@ -1,0 +1,373 @@
+@font-face {
+  font-family: "orkney";
+  src: url("../assets/orkney-regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "orkney";
+  src: url("../assets/orkney-bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "orkney";
+  src: url("../assets/orkney-medium.otf");
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "orkney";
+  src: url("../assets/orkney-light.otf");
+  font-style: light;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: orkney;
+}
+
+body header .burger-menu {
+  position: fixed;
+  width: 0px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger-logo {
+  cursor: pointer;
+  background: #053b50;
+  display: block;
+  color: white;
+  text-align: right;
+}
+
+body header .burger-menu nav {
+  background: #053b50;
+  overflow: hidden;
+}
+
+#hamburger-logo,
+nav {
+  transition: 0.7s;
+}
+
+#hamburger:checked~#hamburger-logo,
+#hamburger:checked~nav {
+  transform: translate(0px);
+}
+
+body header .burger-menu nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+body header .burger-menu nav a:hover {
+  background: #053b50;
+}
+
+body header .bandeau {
+  background-color: #64ccc5;
+  display: flex;
+}
+
+body header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+body header .bandeau img {
+  padding: 1%;
+}
+
+body header .frise {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body header .frise input {
+  display: flex;
+  width: 50%;
+  border: solid 4px #176b87;
+  border-radius: 20px;
+  background-color: #f8f9f1;
+  opacity: 0.7;
+  text-align: center;
+  height: 20px;
+}
+
+footer {
+  position: relative;
+  background-image: url(../assets/accueil/fondfootermini.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 135px;
+}
+
+footer img {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3%;
+  margin: auto;
+}
+
+footer .icon-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 4% 0% 1% 0%;
+}
+
+footer p {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 8px;
+  text-align: center;
+  padding: 1%;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  #hamburger-logo {
+    width: 90px;
+    transform: translateX(-70px);
+    padding: 5px;
+  }
+
+  body header .burger-menu nav {
+    width: 100px;
+    transform: translateX(-100px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 10px;
+  }
+
+  body header h1 {
+    font-size: 2em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 50px;
+  }
+
+  body header .frise {
+    background-image: url(../assets/accueil/panorama-mini.jpg);
+    height: 100px;
+  }
+
+  body header .frise img {
+    width: 25px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #hamburger-logo {
+    width: 135px;
+    transform: translateX(-115px);
+    padding: 7.5px;
+    font-size: 1.2em;
+  }
+
+  body header .burger-menu nav {
+    width: 150px;
+    transform: translateX(-150px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 15px;
+  }
+
+  body header h1 {
+    font-size: 2.5em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 75px;
+  }
+
+  body header .frise {
+    background-image: url(../assets/accueil/panorama-medium.jpg);
+    height: 150px;
+  }
+
+  body header .frise img {
+    width: 32.5px;
+  }
+
+  body header .frise input {
+    height: 28px;
+    font-size: 18px;
+  }
+
+  footer {
+    background-image: url(../assets/accueil/fondfooter.jpg);
+    height: 180px;
+  }
+
+  footer .icon-footer img {
+    width: 45px;
+  }
+
+  footer .icon-footer .oreille img {
+    width: 22.5px;
+  }
+
+  footer .icon-footer .plan img {
+    width: 30px;
+  }
+
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #hamburger-logo {
+    width: 202.5px;
+    transform: translateX(-187.5px);
+    padding: 11.25px;
+    font-size: 1.4em;
+  }
+
+  body header .burger-menu nav {
+    width: 225px;
+    transform: translateX(-225px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 22.5px;
+    font-size: 2em;
+  }
+
+  body header h1 {
+    font-size: 3.7em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 112.5px;
+  }
+
+  body header .frise {
+    background-image: url(../assets/accueil/panorama-normal.jpg);
+    height: 225px;
+  }
+
+  body header .frise img {
+    width: 48.75px;
+  }
+
+  body header .frise input {
+    height: 43px;
+    font-size: 25px;
+  }
+
+  footer {
+    height: 300px;
+  }
+
+  footer img {
+    width: 150px;
+  }
+
+  footer .icon-footer img {
+    width: 90px;
+  }
+
+  footer .icon-footer .oreille img {
+    width: 45px;
+  }
+
+  footer .icon-footer .plan img {
+    width: 60px;
+  }
+
+  footer p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  #hamburger-logo {
+    width: 303.75px;
+    transform: translateX(-286.25px);
+    padding: 16.87px;
+    font-size: 1.4em;
+  }
+
+  body header .burger-menu nav {
+    width: 337.5px;
+    transform: translateX(-337.5px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 33.75px;
+    font-size: 2.5em;
+  }
+
+  body header h1 {
+    font-size: 5.55em;
+    margin: 2% 0% 0% 11%;
+  }
+
+  body header .bandeau img {
+    width: 168.75px;
+  }
+
+  body header .frise {
+    background-image: url(../assets/accueil/panorama-normal.jpg);
+    height: 337.5px;
+  }
+
+  body header .frise img {
+    width: 73.125px;
+  }
+
+  body header .frise input {
+    height: 60px;
+    font-size: 40px;
+  }
+
+  footer {
+    background-image: url(../assets/accueil/fondfooter.jpg);
+    height: 400px;
+  }
+
+  footer img {
+    width: 150px;
+  }
+
+  footer .icon-footer img {
+    width: 120px;
+  }
+
+  footer .icon-footer .oreille img {
+    width: 72.5px;
+  }
+  footer .icon-footer .plan img {
+    width: 90px;
+  }
+
+  footer p {
+    font-size: 18px;
+    text-align: center;
+  }
+}

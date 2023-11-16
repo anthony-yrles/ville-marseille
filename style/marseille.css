@@ -107,6 +107,29 @@ body header .frise input {
   height: 20px;
 }
 
+body main {
+  overflow-x: hidden;
+}
+
+body main .container {
+  overflow-x: auto;
+}
+
+body main .container .container-scroll {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+body main .container .article-scroll {
+  flex: 0 0 auto; /* Empêche les articles de se réduire pour s'ajuster à la largeur de la fenêtre */
+  min-width: 300px; /* Définissez une largeur minimale pour chaque article */
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 footer {
   position: relative;
   background-image: url(../assets/accueil/fondfootermini.jpg);

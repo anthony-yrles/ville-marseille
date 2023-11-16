@@ -1,5 +1,5 @@
 /*  */
-/* @font-face {
+@font-face {
     font-family: 'orkney';
     src: url('../assets/orkney-regular.otf');
     font-weight: normal;
@@ -21,7 +21,7 @@
     font-family: 'orkney';
     src: url('../assets/orkney-light.otf');
     font-style: light;
-} */
+}
 
 /* * {
     margin: 0;
@@ -29,11 +29,7 @@
     overflow:visible;
 } */
 
-body {
-    /* font-family: orkney; */
-    /* height: 100%; */
 
-}
 
 main {
     background-image: url('../assets/photo-musee/Plan\ de\ travail\ 1.jpg');
@@ -73,7 +69,7 @@ main .container-droite .container-histoire .titre-numero {
     color: #176B87;
 }
 
-main .container-droite .container-histoire .titre-numero #mega-num {
+main .container-droite .container-histoire .titre-numero .mega-num {
     align-items: end;
     font-size: 18em;
     margin-bottom: 0;
@@ -139,7 +135,7 @@ main .container-droite .container-histoire .citation figure {
 
 main .container-droite .container-histoire .citation figure img {
     width: 100%;
-    border-radius: 100px; 
+    border-radius: 100px;
     transition: transform 0.3s ease;
 }
 
@@ -170,57 +166,93 @@ main .container-droite .container-histoire .citation p strong {
 
 
 @media only screen and (max-width: 480px) {
-    main .container-droite .container-histoire{
-        float:none;
-        /* transform: scale(0.8); */    
+    main .container-droite .container-histoire {
+        float: none;
+        padding-top: 0;
+
     }
-    
-    
-    main .container-droite {
-        /* justify-content: none; */
-        max-width: 90vw;
+
+    main .container-droite .container-histoire section p {
+        overflow: scroll;
+        height: 400px;
     }
+
+    main .container-droite .container-histoire .titre-numero{
+        transform: scale(0.5);
+        display: block;
+        height: 300px;
+        text-align: center;
+    }
+
+    main .container-droite .container-histoire h3{
+        transform: scale(1.5);
+    }
+
+    main .container-droite .container-histoire .titre-numero .mega-num{
+        color: rgb(248, 249, 241);
+        transform: scale(0.5);
+    }
+
+    .titre-numero h3 {
+
+        color: #F8F9F1;
+    }
+
+    main .container-droite .container-histoire .citation{
+        /* width: 90%; */
+        margin-top: 10%;
+        overflow: scroll;
+        max-height:200px;
+    }
+
+    main .container-droite .container-histoire .citation p {
+        font-size: 12px;
+
+    }
+
+    main .container-droite .container-histoire .citation p i {
+        font-size: 9px;
+        color: #F8F9F1;
+
+    }
+    main .container-droite .container-histoire .citation figure img{
+        transform: scale(2.5);
+    }
+
 }
 
 /* Styles pour les petits écrans (mobiles) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-        
+
     .titre-numero {
-        transform: scale(0.8);
+        transform: scale(0.6);
     }
+
     main {
         /* background-position-y: -800px; */
         background-position-x: -400px;
         background-size: cover;
     }
-    .citation p {
-        font-size: 15px;
-    }
-    
-    .citation p i {
-        font-size: 10px;
-    }
 }
 
 /* Styles pour les écrans de taille moyenne (tablettes) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        
-    .titre-numero #mega-num {
+
+    .titre-numero .mega-num {
         font-size: 10em;
     }
-    
-    .titre-numero{
+
+    .titre-numero {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
 
-    .container-histoire p{
+    .container-histoire p {
         font-size: 12px;
     }
-    .container-histoire .citation p{
+
+    .container-histoire .citation p {
         font-size: 10px;
     }
 }
-
-

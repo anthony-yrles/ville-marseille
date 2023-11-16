@@ -1,6 +1,6 @@
   footer {
     background-color: #64ccc5;
-    padding: 1%;
+    position: absolute;
   }
   
   footer .fond-footer {

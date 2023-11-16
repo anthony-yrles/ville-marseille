@@ -1,0 +1,110 @@
+body {
+  background-image: url("../assets/photo-plage/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color:#f8f9f1;
+  margin-top: 20px;
+}
+
+main .plage-prado {
+  width: 70%;
+  margin: 10% auto;
+  padding: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #f8f9f1;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: #3498db;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+main .plage-prado .description p {
+  font-size: 15px;
+  padding: 15px 0px;
+}
+
+h3 {
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  main .plage-prado .description {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  main .plage-prado .description p {
+    font-size: 18px;
+    padding: 20px 0px;
+  }
+
+  h3 {
+    font-size: 33px;
+    padding-top: 10px;
+  }
+
+  main .plage-prado .description img {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body main .grid-plages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  main .grid-plages .plage-prado {
+    background-color: transparent;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 30% 95%, 10% 100%, 10% 95%, 0% 95%);
+    backdrop-filter: blur(20px);
+  }
+
+  main .grid-plages .medium {
+    background-color: #F8F9F1 ;
+  }
+
+  main .grid-plages .plage-prado h2 {
+    font-size: 22px;
+  }
+
+  main .grid-plages .plage-prado .description p {
+    font-size: 11px;
+  }
+
+  h3 {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+
+  main .grid-plages .plage-prado li {
+    font-size: 11px;
+  }
+}

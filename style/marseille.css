@@ -58,8 +58,8 @@ nav {
   transition: 0.7s;
 }
 
-#hamburger:checked~#hamburger-logo,
-#hamburger:checked~nav {
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
   transform: translate(0px);
 }
 
@@ -109,25 +109,66 @@ body header .frise input {
 
 body main {
   overflow-x: hidden;
+  background-color: #f8f9f1;
+}
+
+body main h1 {
+  display: flex;
+  font-size: 55px;
+  color: #176b87;
+  justify-content: center;
 }
 
 body main .container {
+  display: flex;
   overflow-x: auto;
+  text-align: center;
 }
 
 body main .container .container-scroll {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
+  margin: 5%;
 }
 
-body main .container .article-scroll {
-  flex: 0 0 auto; /* Empêche les articles de se réduire pour s'ajuster à la largeur de la fenêtre */
-  min-width: 300px; /* Définissez une largeur minimale pour chaque article */
-  background-color: #f0f0f0;
+body main .container .container-scroll .article-scroll {
+  background-color: #64ccc5;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+body main .container .container-scroll .article-scroll h2 {
+  font-size: 40px;
+  color: #176b87;
+  margin-bottom: 20px;
+}
+
+body main .container .container-scroll .article-scroll img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+body main .container .container-scroll .article-scroll p {
+  font-size: 20px;
+  margin-bottom: 20px; 
+  max-height: 150px;
+  overflow-y: auto;
+  white-space: pre-line;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+body main .container .container-scroll .article-scroll p::-webkit-scrollbar {
+  width: 2px;
 }
 
 footer {
@@ -159,9 +200,7 @@ footer p {
   font-size: 8px;
   text-align: center;
   padding: 1%;
-
 }
-
 
 @media only screen and (max-width: 480px) {
   #hamburger-logo {
@@ -238,6 +277,11 @@ footer p {
     font-size: 18px;
   }
 
+  body main h1 {
+    font-size: 70px;
+    margin-top: 20px;
+  }
+
   footer {
     background-image: url(../assets/accueil/fondfooter.jpg);
     height: 180px;
@@ -300,6 +344,11 @@ footer p {
   body header .frise input {
     height: 43px;
     font-size: 25px;
+  }
+
+  body main h1 {
+    font-size: 95px;
+    margin-top: 30px;
   }
 
   footer {

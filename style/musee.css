@@ -32,7 +32,7 @@
   }
 
 main{
-    background-color: #053B50 ;
+    background-color: #f8f9f1 ;
     padding: 0;
     /* height: 1000vw; */
 }
@@ -44,12 +44,15 @@ main{
     justify-content: center;
 } */
 
-main .text-intro i{
-    width:50px;
+.musee-page .texte-intro p{
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 8%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-
+    justify-content: center;
+    font-size:x-large;
+    text-align: center;
 }
 
 main .titre-musee{
@@ -67,33 +70,35 @@ main .titre-musee{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 50px;
     padding: 30px;
-    background-color: #053B50;
+    background-color: #f8f9f1;
 }
 .card {
-    backdrop-filter: blur(20px);
-    background-color: transparent;
+    /* backdrop-filter: blur(20px); */
+    /* background-color: transparent; */
     /* border: 6px solid #0000FF; */
-    background-color: #F8F9F1 ;
+    /* background-color: #f8f9f1; */
     border-radius: 10px;
     padding: 10px;
     filter:grayscale();
-    box-shadow: 2px 2px 50px #64CCC5;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .card:hover{
     filter:none;
-
+    box-shadow: 2px 2px 50px #64CCC5;
+    
     .texte-cache{
         color:black;
     }
 }
 .card img {
-    width: 50%;
+    width: 90%;
     height: auto;
     padding:4%;
 }
+
+
 .card .titre-musee {
     text-align: center;
     font-weight: bold;
@@ -109,6 +114,10 @@ main .titre-musee{
     padding: 4%;
 }
 
-.card-container .card .vide{
+.card-container .vide{
     background-color: #053B50;
+    border-radius: 10px;
+    padding: 10px;
 }
+
+

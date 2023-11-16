@@ -9,10 +9,9 @@
     <meta name="description" content="Site Ville de Marseille">
     <title>Histoire Marseille</title>
 
-    <link rel="stylesheet" href="marseille.css">
-    <link rel="stylesheet" href="header.css">
-    <!-- <link rel="stylesheet" href="footer.css"> -->
-    <link rel="stylesheet" href="histoire.css">
+    <link rel="stylesheet" href="./style/marseille.css">
+    <!-- <link rel="stylesheet" href="header.css"> -->
+    <link rel="stylesheet" href="./style/histoire.css">
 
 
     <meta property="og:title" content="Site de la ville de Marseille">
@@ -37,34 +36,35 @@
 
 <body>
     <header>
-        <section class="bandeaux">
+        <section class="bandeau">
+            <h1>Marseille.fr</h1>
+            <img src="../assets/accueil/logo_0.png" alt="Logo de la ville de Marseille">
+            <section class="burger-menu">
+                <input type="checkbox" id="hamburger">
+                <label id="hamburger-logo" for="hamburger">☰</label>
+                <nav>
+                    <a href="marseille.html">Accueil</a>
+                    <a href="histoire.html">Notre histoire</a>
+                    <a href="plage.html">Nos plages</a>
+                    <a href="rando.html">Randonnées</a>
+                    <a href="parc.html">Nos parcs</a>
+                    <a href="musee.html">Nos musées</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </section>
+        </section>
+        <section class="frise">
             <section class="reseaux">
-                <a href="https://twitter.com/marseille"><img src="./assets/accueil/twitter.png"
+                <a href="https://twitter.com/marseille"><img src="../assets/accueil/twitter.png"
                         alt="logo de Twitter"></a>
-                <a href="https://www.facebook.com/marseilleville/"><img src="./assets/accueil/facebook.png"
+                <a href="https://www.facebook.com/marseilleville/"><img src="../assets/accueil/facebook.png"
                         alt="logo de Facebook"></a>
-                <a href="https://www.instagram.com/villemarseille/"><img src="./assets/accueil/instagram.png"
+                <a href="https://www.instagram.com/villemarseille/"><img src="../assets/accueil/instagram.png"
                         alt="logo d'Instagram"></a>
-                <a href="https://www.youtube.com/user/VilledeMarseille"><img src="./assets/accueil/youtube.png"
+                <a href="https://www.youtube.com/user/VilledeMarseille"><img src="../assets/accueil/youtube.png"
                         alt="logo de youtube"></a>
             </section>
-            <section class="recherche">
-                <input type="text" id="recherche" name="recherche" placeholder="Recherche..."></input>
-            </section>
-            <img src="./assets/accueil/logo_0.png" alt="Logo de la ville de Marseille">
-        </section>
-        <section class="burger-menu">
-            <input type="checkbox" id="hamburger">
-            <label id="hamburger-logo" for="hamburger">☰</label>
-            <nav>
-                <a href="marseille.html">Accueil</a>
-                <a href="histoire.html">Notre histoire</a>
-                <a href="plages.html">Nos plages</a>
-                <a href="rando.html">Randonnées</a>
-                <a href="parcs.html">Nos parcs</a>
-                <a href="musee.html">Nos musées</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            <input type="text" id="recherche" name="recherche" placeholder="Recherche..."></input>
         </section>
     </header>
 
@@ -119,7 +119,7 @@
                 </section>
                 <section class="citation">
                     <figure>
-                        <img src="./assets/photo-musee/CosquerMediterranee.jpg" alt="Peinture ancienne"/>
+                        <img src="./assets/photo-musee/CosquerMediterranee.jpg" alt="Peinture ancienne" />
                         <figcaption>Grotte Cosquer</figcaption>
                     </figure>
                     <p><strong>«Un voyage de mille lieues commence toujours par un premier pas»</strong>
@@ -484,7 +484,8 @@
                 </section>
                 <section class="citation">
                     <figure>
-                        <img src="./assets/photo-musee/lara-schipperen-VXZF0vQaIlw-unsplash.jpg" alt="Peinture ancienne" />
+                        <img src="./assets/photo-musee/lara-schipperen-VXZF0vQaIlw-unsplash.jpg"
+                            alt="Peinture ancienne" />
                         <figcaption>Marseille actuelle</figcaption>
                     </figure>
                     <p><strong>«Marseille est une énigme, une maison avec plusieurs portes et fenêtres toujours
@@ -495,30 +496,28 @@
                     </p>
                 </section>
             </section>
-
+        </section>
     </main>
 
     <footer>
-        <section class="fond-footer">
-            <img src="./assets/accueil/logo_ville_de_marseille.png"
-                alt="logo de la ville avec ecrit marseille.fr en plus" class="marseille" width="120">
-            <section class="icon-footer">
-                <a href="https://www.marseille.fr/mairie/services-de-proximit%C3%A9/all%C3%B4-mairie"><img
-                        src="./assets/accueil/allomairie.png" alt="logo de allo mairie" width="60"></a>
-                <a href="https://app.acce-o.fr/client/marseille"><img
-                        src="./assets/accueil/acceo_blanc_footer.png" alt="logo de acceo" width="60"></a>
-                <a href="https://www.sortiramarseille.fr/"><img
-                        src="./assets/accueil/sortir_a_marseille.png" alt="logo de sortir à marseille" width="60"></a>
-                <a href="https://carto.marseille.fr/" class="plan"><img src="./assets/accueil/iconscarte.png"
-                        alt="logo d'un plan" width="40"></a>
-            </section>
-            <p>
-                <a href="contact.html">Contact |</a>
-                <a href="https://www.marseille.fr/ecrire-a-monsieur-le-maire"> Ecrire à Mr le maire |</a>
-                <a href="https://www.marseille.fr/vous-etes-un-particulier-contacter-la-ville-de-marseille">Saisine
-                    electronique</a>
-            </p>
+        <img src="../assets/accueil/logo_0.png" alt="logo de la ville avec ecrit marseille.fr en plus" class="marseille"
+            width="90">
+        <section class="icon-footer">
+            <a href="https://www.marseille.fr/mairie/services-de-proximit%C3%A9/all%C3%B4-mairie"><img
+                    src="../assets/accueil/allomairie_noir.png" alt="logo de allo mairie" width="30"></a>
+            <a href="https://app.acce-o.fr/client/marseille" class="oreille"><img
+                    src="../assets/accueil/acceo_blanc_footer_noir.png" alt="logo de acceo" width="15"></a>
+            <a href="https://www.sortiramarseille.fr/"><img src="../assets/accueil/sortir_a_marseille_noir.png"
+                    alt="logo de sortir à marseille" width="30"></a>
+            <a href="https://carto.marseille.fr/" class="plan"><img src="../assets/accueil/iconscarte_noir.png"
+                    alt="logo d'un plan" width="20"></a>
         </section>
+        <p>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.marseille.fr/ecrire-a-monsieur-le-maire"> Ecrire à Mr le maire</a>
+            <a href="https://www.marseille.fr/vous-etes-un-particulier-contacter-la-ville-de-marseille">Saisine
+                electronique</a>
+        </p>
     </footer>
 </body>
 

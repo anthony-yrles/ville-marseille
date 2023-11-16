@@ -59,8 +59,8 @@ body {
 
 /* Media Queries */
 
+/* Styles pour les très petits écrans (par exemple, montres intelligentes) */
 @media only screen and (max-width: 480px) {
-
     .boite-blanche {
         width: 90%;
         height: 140%;
@@ -72,14 +72,15 @@ body {
     }
 }
 
+/* Styles pour les petits écrans (mobiles) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-
     .boite-blanche {
         width: 80%;
         height: 130%;
     }
 }
 
+/* Styles pour les écrans de taille moyenne (tablettes) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .boite-blanche {
         width: 70%;
@@ -87,6 +88,7 @@ body {
     }
 }
 
+/* Styles pour les écrans larges (ordinateurs portables) */
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .boite-blanche {
         width: 60%;
@@ -94,9 +96,18 @@ body {
     }
 }
 
-@media only screen and (min-width: 1280px) {
+/* Styles pour les grands écrans (ordinateurs de bureau) */
+@media only screen and (min-width: 1280px) and (max-width: 1029px) {
     .boite-blanche {
         width: 50%;
         height: 100%;
+    }
+}
+
+/* Styles pour les très grands écrans (ordinateurs de bureau) à partir de 1030px */
+@media only screen and (min-width: 1030px) {
+    .boite-blanche {
+        width: 50%;
+        height: 800px;
     }
 }

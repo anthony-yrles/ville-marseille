@@ -5,6 +5,7 @@ body main {
     background-size: cover;
 }
 
+
 body main .container-droite {
     margin: 5%;
     margin-left: 20%;
@@ -26,7 +27,6 @@ body main .container-droite .titre-principal {
 body main .container-droite .titre-principal h1 {
     margin-right: 16%;
     font-size: 13vw;
-    /* font-style: bold; */
     color: rgb(5, 59, 80);
 }
 
@@ -36,7 +36,6 @@ body main .container-droite .titre-principal h2 {
     padding: 1%;
     padding-left: 27%;
     border-radius: 25px;
-    /* font-style: bold; */
     color: white;
 }
 
@@ -55,7 +54,6 @@ body main .container-droite .container-histoire section .titre-numero {
 }
 
 body main .container-droite .container-histoire section .titre-numero .mega-num {
-    /* align-items: end; */
     font-size: 18em;
     margin-bottom: 0;
     color: rgb(5, 59, 80);
@@ -134,7 +132,6 @@ body main .container-droite .container-histoire .citation p strong {
 
     body main .container-droite .container-histoire section .titre-numero h3 {
         color: #F8F9F1;
-        /* ancien h3 deux cases en dessous à verif */
         transform: scale(1.5);
     }
 
@@ -143,17 +140,18 @@ body main .container-droite .container-histoire .citation p strong {
         height: 400px;
     }
 
-    /* body main .container-droite .container-histoire h3 {
-    } */
-
-    body main .container-droite .container-histoire .citation {
+    body main .container-droite .container-histoire .citation p{
         margin-top: 10%;
-        overflow: scroll;
+        overflow: auto;
+        padding-top: 2%;
         max-height: 200px;
     }
 
     body main .container-droite .container-histoire .citation figure img {
         transform: scale(2.5);
+    }
+    body main .container-droite .container-histoire .citation figure figcaption {
+        color:transparent;
     }
 
     body main .container-droite .container-histoire .citation p {

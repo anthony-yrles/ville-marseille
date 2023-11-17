@@ -95,13 +95,11 @@ main .button .modal {
   z-index: 1;
 }
 
-/* Style du formulaire à l'intérieur du modal */
 main .button .modal form {
   display: grid;
   gap: 10px;
 }
 
-/* Fermer le bouton du modal */
 main .button .modal .close-btn {
   position: absolute;
   top: 10px;
@@ -109,7 +107,6 @@ main .button .modal .close-btn {
   cursor: pointer;
 }
 
-/* Style de l'overlay pour obscurcir l'arrière-plan */
 #overlay {
   display: none;
   position: fixed;
@@ -121,7 +118,6 @@ main .button .modal .close-btn {
   z-index: 0;
 }
 
-/* Lien pour fermer le modal */
 main .button .modal a:target {
   display: none;
 }

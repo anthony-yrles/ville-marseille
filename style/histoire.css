@@ -1,47 +1,11 @@
-/*  */
-@font-face {
-    font-family: 'orkney';
-    src: url('../assets/orkney-regular.otf');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'orkney';
-    src: url('../assets/orkney-bold.otf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'orkney';
-    src: url('../assets/orkney-medium.otf');
-    font-style: medium;
-}
-
-@font-face {
-    font-family: 'orkney';
-    src: url('../assets/orkney-light.otf');
-    font-style: light;
-}
-
-/* * {
-    margin: 0;
-    padding: 0;
-    overflow:visible;
-} */
-
-
-
-main {
+body main {
     background-image: url('../assets/photo-musee/Plan\ de\ travail\ 1.jpg');
     display: flex;
     background-attachment: fixed;
-    /* background-position-y: -600px; */
-    /* background-position-x: -600px; */
     background-size: cover;
 }
 
-main .container-droite {
-    /* background-color: #176B87; */
+body main .container-droite {
     margin: 5%;
     margin-left: 20%;
     display: flex;
@@ -50,45 +14,7 @@ main .container-droite {
     max-width: 70vw;
 }
 
-main .container-droite .glass {
-    backdrop-filter: blur(20px);
-    background-color: transparent;
-    /* background-color: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); */
-    border-radius: 50px;
-    padding: 5%;
-    margin: 2%;
-    box-shadow: rgba(5, 59, 80, 0.4) 5px 5px, rgba(5, 59, 80, 0.3) 10px 10px, rgba(5, 59, 80, 0.2) 15px 15px, rgba(5, 59, 80, 0.1) 20px 20px, rgba(5, 59, 80, 0.05) 25px 25px;
-    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); */
-}
-
-main .container-droite .container-histoire .titre-numero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #176B87;
-}
-
-main .container-droite .container-histoire .titre-numero .mega-num {
-    align-items: end;
-    font-size: 18em;
-    margin-bottom: 0;
-    color: rgb(5, 59, 80);
-}
-
-
-main .container-droite .container-histoire {
-    margin-top: 15%;
-    /* margin-bottom: 10%; */
-    float: right;
-}
-
-main .container-droite .container-histoire figure img {
-    max-width: 35%;
-
-}
-
-main .container-droite .titre-principal {
+body main .container-droite .titre-principal {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -97,25 +23,54 @@ main .container-droite .titre-principal {
     margin-bottom: 15%;
 }
 
-main .container-droite .titre-principal h1 {
+body main .container-droite .titre-principal h1 {
     margin-right: 16%;
     font-size: 13vw;
-    font-style: bold;
+    /* font-style: bold; */
     color: rgb(5, 59, 80);
 }
 
-main .container-droite .titre-principal h2 {
+body main .container-droite .titre-principal h2 {
     font-size: 3vw;
-    /* margin-left: 25%; */
     background-color: #053B50;
     padding: 1%;
     padding-left: 27%;
     border-radius: 25px;
-    font-style: bold;
+    /* font-style: bold; */
     color: white;
 }
 
-main .container-droite .container-histoire .citation {
+
+body main .container-droite .container-histoire {
+    margin-top: 15%;
+    float: right;
+}
+
+body main .container-droite .container-histoire section .titre-numero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #176B87;
+}
+
+body main .container-droite .container-histoire section .titre-numero .mega-num {
+    /* align-items: end; */
+    font-size: 18em;
+    margin-bottom: 0;
+    color: rgb(5, 59, 80);
+}
+
+body main .container-droite .glass {
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 5%;
+    margin: 2%;
+    box-shadow: rgba(5, 59, 80, 0.4) 5px 5px, rgba(5, 59, 80, 0.3) 10px 10px, rgba(5, 59, 80, 0.2) 15px 15px, rgba(5, 59, 80, 0.1) 20px 20px, rgba(5, 59, 80, 0.05) 25px 25px;
+}
+
+body main .container-droite .container-histoire .citation {
     display: flex;
     padding: 1%;
     margin-top: 2%;
@@ -123,8 +78,7 @@ main .container-droite .container-histoire .citation {
     align-items: center;
 }
 
-main .container-droite .container-histoire .citation figure {
-    /* background-color: #053B50; */
+body main .container-droite .container-histoire .citation figure {
     font-size: 12px;
     width: 40%;
     display: flex;
@@ -133,126 +87,115 @@ main .container-droite .container-histoire .citation figure {
     align-items: center;
 }
 
-main .container-droite .container-histoire .citation figure img {
+body main .container-droite .container-histoire .citation figure img {
     width: 100%;
+    max-width: 35%;
     border-radius: 100px;
     transition: transform 0.3s ease;
 }
 
-main .container-droite .container-histoire .citation figure img:hover {
+body main .container-droite .container-histoire .citation figure img:hover {
     width: 100%;
-    /* height: 20%; */
     border-radius: 0;
     transform: scale(4.2);
-
 }
 
-
-main .container-droite .container-histoire .citation p {
+body main .container-droite .container-histoire .citation p {
     width: 40%;
 }
 
-main .container-droite .container-histoire .citation p i {
+body main .container-droite .container-histoire .citation p i {
     color: #176B87;
     font-size: 15px;
 }
 
-main .container-droite .container-histoire .citation p strong {
+body main .container-droite .container-histoire .citation p strong {
     color: #053B50;
 }
 
-
-
-
-
+/* Styles pour les petits écrans (mobiles) */
 @media only screen and (max-width: 480px) {
-    main .container-droite .container-histoire {
+    body main .container-droite .container-histoire {
         float: none;
         padding-top: 0;
-
     }
 
-    main .container-droite .container-histoire section p {
-        overflow: scroll;
-        height: 400px;
-    }
-
-    main .container-droite .container-histoire .titre-numero{
+    body main .container-droite .container-histoire .titre-numero {
         transform: scale(0.5);
         display: block;
         height: 300px;
         text-align: center;
     }
 
-    main .container-droite .container-histoire h3{
-        transform: scale(1.5);
-    }
-
-    main .container-droite .container-histoire .titre-numero .mega-num{
+    body main .container-droite .container-histoire .titre-numero .mega-num {
         color: rgb(248, 249, 241);
         transform: scale(0.5);
     }
 
-    .titre-numero h3 {
-
+    body main .container-droite .container-histoire section .titre-numero h3 {
         color: #F8F9F1;
+        /* ancien h3 deux cases en dessous à verif */
+        transform: scale(1.5);
     }
 
-    main .container-droite .container-histoire .citation{
-        /* width: 90%; */
+    body main .container-droite .container-histoire section p {
+        overflow: scroll;
+        height: 400px;
+    }
+
+    /* body main .container-droite .container-histoire h3 {
+    } */
+
+    body main .container-droite .container-histoire .citation {
         margin-top: 10%;
         overflow: scroll;
-        max-height:200px;
+        max-height: 200px;
     }
 
-    main .container-droite .container-histoire .citation p {
-        font-size: 12px;
-
-    }
-
-    main .container-droite .container-histoire .citation p i {
-        font-size: 9px;
-        color: #F8F9F1;
-
-    }
-    main .container-droite .container-histoire .citation figure img{
+    body main .container-droite .container-histoire .citation figure img {
         transform: scale(2.5);
     }
 
-}
-
-/* Styles pour les petits écrans (mobiles) */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-
-    .titre-numero {
-        transform: scale(0.6);
+    body main .container-droite .container-histoire .citation p {
+        /* citation caché par le p d'au dessus */
+        font-size: 12px;
     }
 
-    main {
-        /* background-position-y: -800px; */
+    body main .container-droite .container-histoire .citation p i {
+        font-size: 9px;
+        color: #F8F9F1;
+    }
+}
+
+/* Styles pour les écrans (mobiles) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body main {
         background-position-x: -400px;
         background-size: cover;
+    }
+
+    body main .container-droite .container-histoire section .titre-numero {
+        transform: scale(0.6);
     }
 }
 
 /* Styles pour les écrans de taille moyenne (tablettes) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-    .titre-numero .mega-num {
-        font-size: 10em;
-    }
-
-    .titre-numero {
+    body main .container-droite .container-histoire section .titre-numero {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
 
-    .container-histoire p {
+    body main .container-droite .container-histoire section .titre-numero .mega-num {
+        font-size: 10em;
+    }
+
+    body main .container-droite .container-histoire p {
         font-size: 12px;
     }
 
-    .container-histoire .citation p {
+    body main .container-droite .container-histoire .citation p {
         font-size: 10px;
     }
 }

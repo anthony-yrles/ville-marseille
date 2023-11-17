@@ -109,10 +109,14 @@
   
   footer {
     position: relative;
-    background-image: url(../assets/photo-histoire/skyline-footer.jpg);
+    background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 130px;
+    background-position: center bottom;
+    min-height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
   }
   
   footer img {
@@ -127,16 +131,26 @@
     justify-content: space-around;
     align-items: flex-end;
     padding: 4% 0% 1% 0%;
+    margin-left:5%;
+    margin-bottom: 5%;
   }
   
-  footer p {
+  footer .contact{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    font-size: 8px;
-    text-align: center;
-    padding: 1%;
+    flex-direction: row;
+    font-size: 6px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
   
+  footer .contact a{
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration:none;
+    color:#f8f9f1;
+    font-weight: 600;
+    text-align: center;
   }
   
   
@@ -173,6 +187,7 @@
     body header .frise img {
       width: 25px;
     }
+
   }
   
   @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -216,22 +231,28 @@
     }
   
     footer {
-      background-image: url(../assets/photo-histoire/skyline-footer.jpg);
-      height: 172px;
+      background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
+      height: 200px;
     }
-  
-    footer .icon-footer img {
+    
+    footer .icon-footer img{
       width: 45px;
+      margin-bottom: 5%;
     }
   
     footer .icon-footer .plan img {
       width: 30px;
     }
   
-    footer p {
+    footer .contact {
       font-size: 12px;
-      text-align: center;
+      flex-direction: column;
     }
+
+    footer .contact a{
+      padding: 4%;
+    }
+
   }
   
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -284,11 +305,16 @@
     }
   
     footer .icon-footer img {
-      width: 90px;
+      width: 70px;
     }
   
     footer .icon-footer .plan img {
-      width: 60px;
+      width: 40px;
+    }
+
+    footer .contact {
+      font-size: 15px;
+      flex-direction: row;
     }
   
     footer p {
@@ -339,8 +365,8 @@
     }
   
     footer {
-      background-image: url(../assets/photo-histoire/skyline-footer.jpg);
-      background-size: contain;
+      background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
+      background-size: cover;
       height: 540px;
     }
   
@@ -356,8 +382,10 @@
       width: 60px;
     }
   
-    footer p {
-      font-size: 16px;
-      text-align: center;
+
+    footer .contact {
+      font-size: 17px;
+      flex-direction: row;
     }
+  
   }

@@ -89,25 +89,9 @@ body {
 }
 
 /* Styles pour les écrans larges (ordinateurs portables) */
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+@media only screen and (min-width: 1023px) {
     .boite-blanche {
         width: 60%;
         height: 110%;
-    }
-}
-
-/* Styles pour les grands écrans (ordinateurs de bureau) */
-@media only screen and (min-width: 1280px) and (max-width: 1029px) {
-    .boite-blanche {
-        width: 50%;
-        height: 100%;
-    }
-}
-
-/* Styles pour les très grands écrans (ordinateurs de bureau) à partir de 1030px */
-@media only screen and (min-width: 1030px) {
-    .boite-blanche {
-        width: 50%;
-        height: 800px;
     }
 }

@@ -2,13 +2,21 @@ body main {
     background: linear-gradient(to top right, #ffffff, #0091f1);
     margin: 0;
     padding: 0;
+    text-align: center;
+    color: #dbd6d6;
 }
 
+body main h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
 
-.boite-blanche {
+body main .boite-blanche {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #fff;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -18,235 +26,152 @@ body main {
     transition: transform 0.3s ease-in-out;
 }
 
-.boite-blanche:hover {
+body main .boite-blanche:hover {
     transform: scale(1.05);
 }
 
-.boite-blanche img {
+body main .boite-blanche img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
     object-fit: cover;
 }
 
-.boite-blanche h2 {
+body main .boite-blanche h2 {
     text-align: center;
     font-size: 2em;
     margin: 15px 0;
     color: #d1caca;
 }
 
-.boite-blanche a:hover {
-    text-decoration: underline;
-}
-h1 {
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-hr {
-    width: 50%;
-    height: 2px;
-    background-color: #333;
-    border: none;
-    margin: 20px auto;
-}
+/********** Media Query ***********/
 
-/* Media Queries */
-
-/* Styles pour les très petits écrans */
 @media only screen and (max-width: 480px) {
-    .boite-blanche {
+    body main .boite-blanche {
         width: 90%;
         height: 140%;
-        color: #dbd6d6;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    .boite-blanche:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    .boite-blanche img {
-        width: 100%;
-        height: auto;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-
-    .boite-blanche h2,
-    .boite-blanche p {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         padding: 10px;
-        box-sizing: border-box;
-        text-align: center;
     }
 
-    .boite-blanche h2 {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         font-size: 1.5em;
         font-weight: bold;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
-    .boite-blanche h2 {
-        color: #268be4
-    }
-    .boite-blanche p {
-        color: #121212ef;
-    }
-    .boite-blanche.inverse h2 {
-        color: #ffffff;
+        color: #268be4;
     }
 
-    .boite-blanche.inverse p {
-        color: #ffffffef;
-    }
-    .boite-blanche p {
-        font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    body main .boite-blanche p {
+        font-size: 1em;
     }
 
-    .boite-blanche:nth-child(odd) {
+    body main .inverse h2,
+    body main .inverse p {
+        color: #dbd6d6;
+    }
+
+    body main .boite-blanche:nth-child(odd) {
         background-color: #268be4;
     }
 }
 
-/* Styles pour les petits écrans (mobiles) */
+/********** Media Query ***********/
+
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .boite-blanche {
+    body main .boite-blanche {
         width: 90%;
         height: 140%;
-        color: #dbd6d6;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    .boite-blanche:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    .boite-blanche img {
-        width: 100%;
-        height: auto;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-
-    .boite-blanche h2,
-    .boite-blanche p {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         padding: 10px;
-        box-sizing: border-box;
-        text-align: center;
     }
 
-    .boite-blanche h2 {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         font-size: 1.5em;
         font-weight: bold;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
-    .boite-blanche h2 {
-        color: #268be4
-    }
-    .boite-blanche.inverse h2 {
-        color: #ffffff;
+        color: #268be4;
     }
 
-    .boite-blanche.inverse p {
-        color: #ffffff;
-    }
-    .boite-blanche p {
-        color: black;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    body main .boite-blanche p {
+        font-size: 1em;
     }
 
-    .boite-blanche:nth-child(odd) {
+    body main .inverse h2,
+    body main .inverse p {
+        color: #dbd6d6;
+    }
+
+
+    body main .boite-blanche:nth-child(odd) {
         background-color: #268be4;
     }
 }
 
-/* Styles pour les écrans de taille moyenne (tablettes) */
+/********** Media Query ***********/
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .boite-blanche {
+    body main .boite-blanche {
         width: 90%;
         height: 140%;
         color: #dbd6d6;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    .boite-blanche:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    .boite-blanche img {
-        width: 100%;
-        height: auto;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-
-    .boite-blanche h2,
-    .boite-blanche p {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         padding: 10px;
-        box-sizing: border-box;
-        text-align: center;
     }
 
-    .boite-blanche h2 {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         font-size: 1.5em;
         font-weight: bold;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
-    .boite-blanche h2 {
         color: #268be4
     }
-    .boite-blanche.inverse h2 {
+
+    body main .boite-blanche p {
+        font-size: 1em;
+    }
+
+    body main .inverse h2,
+    body main .inverse p {
         color: #ffffff;
     }
 
-    .boite-blanche.inverse p {
-        color: #ffffff;
-    }
-    .boite-blanche p {
-        color: black;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
-
-    .boite-blanche:nth-child(odd) {
+    body main .boite-blanche:nth-child(odd) {
         background-color: #268be4;
     }
 }
 
-/* Styles pour les écrans larges (ordinateurs portables) */
+/********** Media Query ***********/
+
 @media only screen and (min-width: 1023px) {
-    .boite-blanche {
+    body main .boite-blanche {
         width: 85%;
-        display: flex;
         flex-direction: row;
-        height: auto;
-        margin: 20px auto;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        border-radius: 12px;
-        overflow: hidden;
-        transition: transform 0.3s ease-in-out;
-        background-color: #f2f2f2;
     }
 
-    .boite-blanche:hover {
+    body main .boite-blanche:hover {
         transform: scale(1.1);
     }
 
-    .boite-blanche img {
+    body main .boite-blanche img {
         width: 40%;
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
-        object-fit: cover;
     }
 
-    .boite-blanche h2,
-    .boite-blanche p {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         width: 60%;
         padding: 20px;
         box-sizing: border-box;
@@ -255,40 +180,26 @@ hr {
         justify-content: center;
     }
 
-    .boite-blanche h2 {
+    body main .boite-blanche h2,
+    body main .boite-blanche p {
         font-size: 1.8em;
         color: #268be4;
-        margin-bottom: 10px;
-        text-align: center;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .boite-blanche p {
-        text-align: justify;
-        color: #333;
-        margin: 0;
-        font-weight: bold;
+    body main .boite-blanche p {
+        font-size: 1em;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
-    .boite-blanche.inverse {
+    body main .inverse {
         flex-direction: row-reverse;
         background-color: #26a2e4;
     }
 
-    .boite-blanche.inverse img {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
-    }
-
-    .boite-blanche.inverse h2 {
-        color: #fff;
-    }
-
-    .boite-blanche.inverse p {
+    body main .boite-blanche.inverse h2,
+    body main .boite-blanche.inverse p {
         color: #fff;
     }
 }

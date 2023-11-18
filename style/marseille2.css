@@ -113,7 +113,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 620px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -367,7 +367,7 @@
     footer {
       background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
       background-size: cover;
-      height: 540px;
+      height: 600px;
     }
   
     footer img {

@@ -31,6 +31,29 @@ body {
   font-family: orkney;
 }
 
+body header {
+  display: flex;
+}
+
+body header .bandeaux {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1%;
+}
+
+body header .bandeaux input {
+  display: flex;
+  width: 50%;
+  border: solid 4px #176b87;
+  border-radius: 20px;
+  background-color: #f8f9f1;
+  opacity: 0.7;
+  text-align: center;
+  height: 20px;
+  margin: auto;
+}
+
 body header .burger-menu {
   position: fixed;
   width: 0px;
@@ -58,8 +81,8 @@ nav {
   transition: 0.7s;
 }
 
-#hamburger:checked ~ #hamburger-logo,
-#hamburger:checked ~ nav {
+#hamburger:checked~#hamburger-logo,
+#hamburger:checked~nav {
   transform: translate(0px);
 }
 
@@ -73,7 +96,7 @@ body header .burger-menu nav a:hover {
   background: #053b50;
 }
 
-body header .bandeau {
+/* body header .bandeau {
   background-color: #64ccc5;
   display: flex;
 }
@@ -105,14 +128,14 @@ body header .frise input {
   opacity: 0.7;
   text-align: center;
   height: 20px;
-}
+} */
 
 body main {
   overflow-x: hidden;
   background-color: #f8f9f1;
 }
 
-body main h1, 
+body main h1,
 body main h2 {
   display: flex;
   font-size: 55px;
@@ -184,7 +207,7 @@ body main .match {
 }
 
 body main .match .container-scroll .article-scroll {
-  background-color: #F8F9F1 ;
+  background-color: #F8F9F1;
 }
 
 body main .match .container-scroll .article-scroll h3 {
@@ -210,7 +233,7 @@ body main .match .container-scroll .article-scroll .gallery {
   margin-top: 25px;
 }
 
-body main .match .container-scroll .article-scroll .gallery > img {
+body main .match .container-scroll .article-scroll .gallery>img {
   height: 0;
   min-height: calc(100% + 16px / 2);
   width: 300px;
@@ -221,51 +244,47 @@ body main .match .container-scroll .article-scroll .gallery > img {
   padding: 0;
 }
 
-body main .match .container-scroll .article-scroll .gallery > img:hover {
+body main .match .container-scroll .article-scroll .gallery>img:hover {
   height: 300px;
   width: 300px;
 }
 
-body main .match .container-scroll .article-scroll .gallery > img:first-child {
+body main .match .container-scroll .article-scroll .gallery>img:first-child {
   place-self: start;
   justify-self: center;
   /* background-color: #0b3fa1; */
-  clip-path: polygon(
-    0 0,
-    100% 0%,
-    100% calc(92% - 16px),
-    90% calc(92% + 16px),
-    80% calc(92% - 16px),
-    70% calc(92% + 16px),
-    60% calc(92% - 16px),
-    50% calc(92% + 16px),
-    40% calc(92% - 16px),
-    30% calc(92% + 16px),
-    20% calc(92% - 16px),
-    10% calc(92% + 16px),
-    0 calc(92% - 16px)
-    );
-  }
-  
-  body main .match .container-scroll .article-scroll .gallery > img:last-child {
-    place-self: end;
-    justify-self: center;
-    background-color: white;
-  clip-path: polygon(
-    0% 100%,
-    100% 100%,
-    100% calc(8% - 16px),
-    90% calc(8% + 16px),
-    80% calc(8% - 16px),
-    70% calc(8% + 16px),
-    60% calc(8% - 16px),
-    50% calc(8% + 16px),
-    40% calc(8% - 16px),
-    30% calc(8% + 16px),
-    20% calc(8% - 16px),
-    10% calc(8% + 16px),
-    0 calc(8% - 16px)
-  );
+  clip-path: polygon(0 0,
+      100% 0%,
+      100% calc(92% - 16px),
+      90% calc(92% + 16px),
+      80% calc(92% - 16px),
+      70% calc(92% + 16px),
+      60% calc(92% - 16px),
+      50% calc(92% + 16px),
+      40% calc(92% - 16px),
+      30% calc(92% + 16px),
+      20% calc(92% - 16px),
+      10% calc(92% + 16px),
+      0 calc(92% - 16px));
+}
+
+body main .match .container-scroll .article-scroll .gallery>img:last-child {
+  place-self: end;
+  justify-self: center;
+  background-color: white;
+  clip-path: polygon(0% 100%,
+      100% 100%,
+      100% calc(8% - 16px),
+      90% calc(8% + 16px),
+      80% calc(8% - 16px),
+      70% calc(8% + 16px),
+      60% calc(8% - 16px),
+      50% calc(8% + 16px),
+      40% calc(8% - 16px),
+      30% calc(8% + 16px),
+      20% calc(8% - 16px),
+      10% calc(8% + 16px),
+      0 calc(8% - 16px));
 }
 
 footer {
@@ -300,6 +319,20 @@ footer p {
 }
 
 @media only screen and (max-width: 480px) {
+  body header .bandeaux .reseaux {
+    padding-top: 1%;
+    padding-left: 5%;
+  }
+
+  body header .bandeaux .reseaux a img {
+    width: 20px;
+  }
+
+  body header .bandeaux img {
+    width: 38.25px;
+    height: 25px;
+  }
+
   #hamburger-logo {
     width: 90px;
     transform: translateX(-70px);
@@ -314,27 +347,26 @@ footer p {
   body header .burger-menu nav a {
     padding: 10px;
   }
-
-  body header h1 {
-    font-size: 2em;
-    margin: 2% 0% 0% 11%;
-  }
-
-  body header .bandeau img {
-    width: 50px;
-  }
-
-  body header .frise {
-    background-image: url(../assets/accueil/panorama-mini.jpg);
-    height: 100px;
-  }
-
-  body header .frise img {
-    width: 25px;
-  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+  body header .bandeaux .reseaux {
+    padding-left: 5%;
+  }
+
+  body header .bandeaux .reseaux a img {
+    width: 30px;
+  }
+
+  body header .bandeaux img {
+    width: 49px;
+    height: 32.5px;
+  }
+
+  body header .recherche input {
+    height: 30px;
+  }
+
   #hamburger-logo {
     width: 135px;
     transform: translateX(-115px);
@@ -349,29 +381,6 @@ footer p {
 
   body header .burger-menu nav a {
     padding: 15px;
-  }
-
-  body header h1 {
-    font-size: 2.5em;
-    margin: 2% 0% 0% 11%;
-  }
-
-  body header .bandeau img {
-    width: 75px;
-  }
-
-  body header .frise {
-    background-image: url(../assets/accueil/panorama-medium.jpg);
-    height: 150px;
-  }
-
-  body header .frise img {
-    width: 32.5px;
-  }
-
-  body header .frise input {
-    height: 28px;
-    font-size: 18px;
   }
 
   body main h1 {
@@ -403,6 +412,23 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body header .bandeaux .reseaux {
+    padding-left: 5%;
+  }
+
+  body header .bandeaux .reseaux a img {
+    width: 45px;
+  }
+
+  body header .bandeaux img {
+    width: 74.58px;
+    height: 48.75;
+  }
+
+  body header .recherche input {
+    height: 45px;
+  }
+
   #hamburger-logo {
     width: 202.5px;
     transform: translateX(-187.5px);
@@ -418,29 +444,6 @@ footer p {
   body header .burger-menu nav a {
     padding: 22.5px;
     font-size: 2em;
-  }
-
-  body header h1 {
-    font-size: 3.7em;
-    margin: 2% 0% 0% 11%;
-  }
-
-  body header .bandeau img {
-    width: 112.5px;
-  }
-
-  body header .frise {
-    background-image: url(../assets/accueil/panorama-normal.jpg);
-    height: 225px;
-  }
-
-  body header .frise img {
-    width: 48.75px;
-  }
-
-  body header .frise input {
-    height: 43px;
-    font-size: 25px;
   }
 
   body main h1 {
@@ -475,6 +478,23 @@ footer p {
 }
 
 @media only screen and (min-width: 1023px) {
+  body header .bandeaux .reseaux {
+    padding-left: 5%;
+  }
+
+  body header .bandeaux .reseaux a img {
+    width: 68px;
+  }
+
+  body header .bandeaux img {
+    width: 111.69px;
+    height: 73px;
+  }
+
+  body header .bandeaux .recherche input {
+    height: 68px;
+  }
+
   #hamburger-logo {
     width: 303.75px;
     transform: translateX(-286.25px);
@@ -531,6 +551,7 @@ footer p {
   footer .icon-footer .oreille img {
     width: 72.5px;
   }
+
   footer .icon-footer .plan img {
     width: 90px;
   }

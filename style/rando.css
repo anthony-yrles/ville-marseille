@@ -22,7 +22,7 @@
   font-style: light;
 }
 
-body {
+body main{
   font-family: orkney;
   background-image: url("../assets/photo-rando/Marseille\ Calanque.jpg");
   background-size: cover;

@@ -112,11 +112,17 @@ body main {
   background-color: #f8f9f1;
 }
 
-body main h1 {
+body main h1, 
+body main h2 {
   display: flex;
   font-size: 55px;
   color: #176b87;
   justify-content: center;
+}
+
+body main h2 {
+  font-size: 35px;
+  margin-top: 20px;
 }
 
 body main .container {
@@ -130,7 +136,7 @@ body main .container .container-scroll {
 }
 
 body main .container .container-scroll .article-scroll {
-  background-color: #64ccc5;
+  background-color: #053B50;
   padding: 15px;
   border-radius: 8px;
   width: 100%;
@@ -149,7 +155,7 @@ body main .container .container-scroll .article-scroll img {
 
 body main .container .container-scroll .article-scroll p {
   font-size: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   max-height: 150px;
   overflow-y: auto;
   white-space: pre-line;
@@ -167,8 +173,99 @@ body main .container .container-scroll .article-scroll p {
 ::-webkit-scrollbar-track {
   background-color: #f0f0f0;
 }
+
 body main .container .container-scroll .article-scroll p::-webkit-scrollbar {
   width: 2px;
+}
+
+body main .match {
+  margin: 5% auto;
+  background-color: #053B50;
+}
+
+body main .match .container-scroll .article-scroll {
+  background-color: #F8F9F1 ;
+}
+
+body main .match .container-scroll .article-scroll h3 {
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  font-size: 35px;
+}
+
+body main .match .container-scroll .article-scroll h3 span:first-child {
+  color: #0b3fa1;
+}
+
+body main .match .container-scroll .article-scroll h3 span:last-child {
+  color: #af3817;
+}
+
+
+body main .match .container-scroll .article-scroll .gallery {
+  display: grid;
+  grid-auto-flow: row;
+  height: 600px;
+  background-color: black;
+  margin-top: 25px;
+}
+
+body main .match .container-scroll .article-scroll .gallery > img {
+  height: 0;
+  min-height: calc(100% + 16px / 2);
+  width: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0px;
+  padding: 0;
+}
+
+body main .match .container-scroll .article-scroll .gallery > img:hover {
+  height: 300px;
+  width: 300px;
+}
+
+body main .match .container-scroll .article-scroll .gallery > img:first-child {
+  place-self: start;
+  justify-self: center;
+  /* background-color: #0b3fa1; */
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% calc(92% - 16px),
+    90% calc(92% + 16px),
+    80% calc(92% - 16px),
+    70% calc(92% + 16px),
+    60% calc(92% - 16px),
+    50% calc(92% + 16px),
+    40% calc(92% - 16px),
+    30% calc(92% + 16px),
+    20% calc(92% - 16px),
+    10% calc(92% + 16px),
+    0 calc(92% - 16px)
+    );
+  }
+  
+  body main .match .container-scroll .article-scroll .gallery > img:last-child {
+    place-self: end;
+    justify-self: center;
+    background-color: white;
+  clip-path: polygon(
+    0% 100%,
+    100% 100%,
+    100% calc(8% - 16px),
+    90% calc(8% + 16px),
+    80% calc(8% - 16px),
+    70% calc(8% + 16px),
+    60% calc(8% - 16px),
+    50% calc(8% + 16px),
+    40% calc(8% - 16px),
+    30% calc(8% + 16px),
+    20% calc(8% - 16px),
+    10% calc(8% + 16px),
+    0 calc(8% - 16px)
+  );
 }
 
 footer {

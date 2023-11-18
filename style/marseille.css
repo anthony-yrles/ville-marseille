@@ -31,6 +31,14 @@ body {
   font-family: orkney;
 }
 
+/**********************************
+
+
+************** HEADER *************
+
+
+***********************************/
+
 body header {
   display: flex;
 }
@@ -109,6 +117,14 @@ body header .burger-menu nav a:hover {
   background: #053b50;
 }
 
+/**********************************
+
+
+*************** MAIN **************
+
+
+***********************************/
+
 body main {
   overflow-x: hidden;
   background-color: #f8f9f1;
@@ -117,15 +133,23 @@ body main {
 body main h1,
 body main h2 {
   display: flex;
-  font-size: 55px;
+  font-size: 35px;
   color: #176b87;
   justify-content: center;
 }
 
 body main h2 {
-  font-size: 35px;
+  font-size: 25px;
   margin-top: 20px;
 }
+
+/**********************************
+
+
+********** MAIN contener **********
+
+
+***********************************/
 
 body main .container {
   display: flex;
@@ -134,30 +158,27 @@ body main .container {
 }
 
 body main .container .container-scroll {
-  margin: 5%;
+  margin: 5% 5% 1% 5%;
 }
 
 body main .container .container-scroll .article-scroll {
   background-color: #053B50;
-  padding: 15px;
   border-radius: 8px;
-  width: 100%;
+  color: white;
 }
 
 body main .container .container-scroll .article-scroll h2 {
-  font-size: 40px;
   color: #176b87;
-  margin-bottom: 20px;
+  padding: 4%;
 }
 
 body main .container .container-scroll .article-scroll img {
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin: 5px;
 }
 
 body main .container .container-scroll .article-scroll p {
   font-size: 20px;
-  margin-bottom: 20px;
   max-height: 150px;
   overflow-y: auto;
   white-space: pre-line;
@@ -180,8 +201,15 @@ body main .container .container-scroll .article-scroll p::-webkit-scrollbar {
   width: 2px;
 }
 
+/**********************************
+
+
+************ MAIN match ***********
+
+
+***********************************/
+
 body main .match {
-  margin: 5% auto;
   background-color: #053B50;
 }
 
@@ -189,17 +217,16 @@ body main .match .container-scroll .article-scroll {
   background-color: #F8F9F1;
 }
 
-body main .match .container-scroll .article-scroll h3 {
+body main .match .container-scroll .article-scroll h2 {
   text-align: center;
-  font-family: system-ui, sans-serif;
   font-size: 35px;
 }
 
-body main .match .container-scroll .article-scroll h3 span:first-child {
+body main .match .container-scroll .article-scroll h2 span:first-child {
   color: #0b3fa1;
 }
 
-body main .match .container-scroll .article-scroll h3 span:last-child {
+body main .match .container-scroll .article-scroll h2 span:last-child {
   color: #af3817;
 }
 
@@ -215,7 +242,6 @@ body main .match .container-scroll .article-scroll .gallery {
 body main .match .container-scroll .article-scroll .gallery>img {
   height: 0;
   min-height: calc(100% + 16px / 2);
-  width: 300px;
   object-fit: cover;
   cursor: pointer;
   transition: 0.5s;
@@ -225,13 +251,11 @@ body main .match .container-scroll .article-scroll .gallery>img {
 
 body main .match .container-scroll .article-scroll .gallery>img:hover {
   height: 300px;
-  width: 300px;
 }
 
 body main .match .container-scroll .article-scroll .gallery>img:first-child {
   place-self: start;
   justify-self: center;
-  /* background-color: #0b3fa1; */
   clip-path: polygon(0 0,
       100% 0%,
       100% calc(92% - 16px),
@@ -266,6 +290,18 @@ body main .match .container-scroll .article-scroll .gallery>img:last-child {
       0 calc(8% - 16px));
 }
 
+body main .match .container-scroll .article-scroll p {
+  color: black;
+}
+
+/**********************************
+
+
+*************** FOOTER ************
+
+
+***********************************/
+
 footer {
   position: relative;
   background-image: url(../assets/accueil/fondfootermini.jpg);
@@ -297,7 +333,11 @@ footer p {
   padding: 1%;
 }
 
+/********** Media Query ***********/
+
 @media only screen and (max-width: 480px) {
+  /********** Header ***********/
+
   body header .bandeaux .reseaux img {
     width: 25px;
   }
@@ -318,7 +358,11 @@ footer p {
   }
 }
 
+/********** Media Query ***********/
+
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+  /********** Header ***********/
+
   body header .bandeaux .reseaux img {
     width: 35px;
   }
@@ -348,6 +392,8 @@ footer p {
     margin-top: 20px;
   }
 
+  /********** Footer ***********/
+
   footer {
     background-image: url(../assets/accueil/fondfooter.jpg);
     height: 180px;
@@ -371,7 +417,11 @@ footer p {
   }
 }
 
+/********** Media Query ***********/
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /********** Header ***********/
+
   body header .bandeaux .reseaux img {
     width: 45px;
   }
@@ -402,6 +452,8 @@ footer p {
     margin-top: 30px;
   }
 
+  /********** Footer ***********/
+
   footer {
     height: 300px;
   }
@@ -428,7 +480,11 @@ footer p {
   }
 }
 
+/********** Media Query ***********/
+
 @media only screen and (min-width: 1023px) {
+  /********** Header ***********/
+
   body header .bandeaux .reseaux img {
     width: 55px;
   }
@@ -454,11 +510,6 @@ footer p {
     font-size: 2.5em;
   }
 
-  body header h1 {
-    font-size: 5.55em;
-    margin: 2% 0% 0% 11%;
-  }
-
   body header .bandeau img {
     width: 168.75px;
   }
@@ -476,6 +527,12 @@ footer p {
     height: 60px;
     font-size: 40px;
   }
+
+  body main .container {
+    justify-content: space-between;
+  }
+
+  /********** Footer ***********/
 
   footer {
     background-image: url(../assets/accueil/fondfooter.jpg);

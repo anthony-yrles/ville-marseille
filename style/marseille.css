@@ -35,22 +35,35 @@ body header {
   display: flex;
 }
 
+
 body header .bandeaux {
-  width: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+body header .bandeaux .reseaux {
   display: flex;
-  justify-content: space-around;
   margin-top: 1%;
 }
 
-body header .bandeaux input {
+body header .bandeaux .reseaux a {
+  margin: auto;
+}
+
+body header .bandeaux .reseaux img {
   display: flex;
-  width: 50%;
-  border: solid 4px #176b87;
+  align-items: flex-end;
+}
+
+body header .bandeaux .reseaux input {
+  display: flex;
+  width: 40%;
+  border: solid 1px #176b87;
   border-radius: 20px;
   background-color: #f8f9f1;
   opacity: 0.7;
   text-align: center;
-  height: 20px;
+  height: 25px;
   margin: auto;
 }
 
@@ -95,40 +108,6 @@ body header .burger-menu nav a {
 body header .burger-menu nav a:hover {
   background: #053b50;
 }
-
-/* body header .bandeau {
-  background-color: #64ccc5;
-  display: flex;
-}
-
-body header h1 {
-  width: 100%;
-  text-align: center;
-}
-
-body header .bandeau img {
-  padding: 1%;
-}
-
-body header .frise {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body header .frise input {
-  display: flex;
-  width: 50%;
-  border: solid 4px #176b87;
-  border-radius: 20px;
-  background-color: #f8f9f1;
-  opacity: 0.7;
-  text-align: center;
-  height: 20px;
-} */
 
 body main {
   overflow-x: hidden;
@@ -319,18 +298,8 @@ footer p {
 }
 
 @media only screen and (max-width: 480px) {
-  body header .bandeaux .reseaux {
-    padding-top: 1%;
-    padding-left: 5%;
-  }
-
-  body header .bandeaux .reseaux a img {
-    width: 20px;
-  }
-
-  body header .bandeaux img {
-    width: 38.25px;
-    height: 25px;
+  body header .bandeaux .reseaux img {
+    width: 25px;
   }
 
   #hamburger-logo {
@@ -350,21 +319,12 @@ footer p {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  body header .bandeaux .reseaux {
-    padding-left: 5%;
+  body header .bandeaux .reseaux img {
+    width: 35px;
   }
 
-  body header .bandeaux .reseaux a img {
-    width: 30px;
-  }
-
-  body header .bandeaux img {
-    width: 49px;
-    height: 32.5px;
-  }
-
-  body header .recherche input {
-    height: 30px;
+  body header .bandeaux .reseaux input {
+    height: 35px;
   }
 
   #hamburger-logo {
@@ -412,20 +372,11 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body header .bandeaux .reseaux {
-    padding-left: 5%;
-  }
-
-  body header .bandeaux .reseaux a img {
+  body header .bandeaux .reseaux img {
     width: 45px;
   }
 
-  body header .bandeaux img {
-    width: 74.58px;
-    height: 48.75;
-  }
-
-  body header .recherche input {
+  body header .bandeaux .reseaux input {
     height: 45px;
   }
 
@@ -478,21 +429,12 @@ footer p {
 }
 
 @media only screen and (min-width: 1023px) {
-  body header .bandeaux .reseaux {
-    padding-left: 5%;
+  body header .bandeaux .reseaux img {
+    width: 55px;
   }
 
-  body header .bandeaux .reseaux a img {
-    width: 68px;
-  }
-
-  body header .bandeaux img {
-    width: 111.69px;
-    height: 73px;
-  }
-
-  body header .bandeaux .recherche input {
-    height: 68px;
+  body header .bandeaux .reseaux input {
+    height: 55px;
   }
 
   #hamburger-logo {

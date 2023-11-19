@@ -134,7 +134,7 @@ body main {
 }
 
 body main h1,
-body main h2 {
+body main .faux-h1 {
   width: 50%;
   margin-left: 25%;
   font-size: 3vw;
@@ -226,6 +226,13 @@ body main .container .container-scroll .article-scroll p::-webkit-scrollbar {
 
 
 ***********************************/
+body main .faux-h1 {
+  height: 30px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 body main .match {
   background-color: #053B50;
@@ -236,7 +243,7 @@ body main .match .container-scroll .article-scroll {
   background-color: #F8F9F1;
 }
 
-body main .match .container-scroll .article-scroll h2 {
+body main .match .container-scroll .article-scroll h3 {
   text-align: center;
   font-size: 35px;
 }

@@ -173,4 +173,8 @@ body main .boite-blanche:nth-child(odd) {
     body main .boite-blanche p {
         font-size: 1em;
     }
+
+    body main .inverse {
+        flex-direction: row-reverse;
+    }
 }

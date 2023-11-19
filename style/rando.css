@@ -13,7 +13,8 @@ body main .grid-container {
   margin: 20px auto;
   padding: 20px 0;
   border-radius: 8px;
-  background-image: url("../assets/photo-rando/marseille-calanque.jpg");
+  background-color: #f8f9f1;
+  /* background-image: url("../assets/photo-rando/marseille-calanque.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,8 +32,9 @@ body main .grid-container .grid-item .image-container {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255);
   border-radius: 5px;
+  box-shadow: rgba(5, 59, 80, 0.4) 5px 5px, rgba(5, 59, 80, 0.3) 10px 10px, rgba(5, 59, 80, 0.2) 15px 15px, rgba(5, 59, 80, 0.1) 20px 20px, rgba(5, 59, 80, 0.05) 25px 25px;
 }
 
 

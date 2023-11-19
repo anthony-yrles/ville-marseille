@@ -3,13 +3,13 @@ body {
   background-color: #f8f9f1;
 }
 
-main .button {
+body main .button {
   display: flex;
   justify-content: space-around;
   margin: 3%;
 }
 
-main .gros-titre-contact {
+body main .gros-titre-contact {
   width: 100vw;
   height: auto;
   background-size: cover;
@@ -19,7 +19,7 @@ main .gros-titre-contact {
   position: static;
 }
 
-main .button .button-86 {
+body main .button .button-86 {
   all: unset;
   width: 100px;
   height: 30px;
@@ -40,8 +40,8 @@ main .button .button-86 {
   touch-action: manipulation;
 }
 
-main .button .button-86::after,
-main .button .button-86::before {
+body main .button .button-86::after,
+body main .button .button-86::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -51,7 +51,7 @@ main .button .button-86::before {
   width: 60%;
 }
 
-main .button .button-86::before {
+body main .button .button-86::before {
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
@@ -59,7 +59,7 @@ main .button .button-86::before {
   border-radius: 10px;
 }
 
-main .button .button-86::after {
+body main .button .button-86::after {
   transform: translate(10px, 10px);
   width: 35px;
   height: 35px;
@@ -69,13 +69,13 @@ main .button .button-86::after {
   border-radius: 50px;
 }
 
-main .button .button-86:hover::before {
+body main .button .button-86:hover::before {
   transform: translate(5%, 20%);
   width: 110%;
   height: 110%;
 }
 
-main .button .button-86:hover::after {
+body main .button .button-86:hover::after {
   border-radius: 10px;
   transform: translate(0, 0);
   width: 100%;
@@ -83,16 +83,16 @@ main .button .button-86:hover::after {
   color: #0056b3;
 }
 
-main .button .button-86:active::after {
+body main .button .button-86:active::after {
   transition: 0s;
   transform: translate(0, 5%);
 }
 
-#contactModal:target {
+body main .button #contactModal:target {
   display: block;
 }
 
-main .button .modal {
+body main .button .modal {
   display: none;
   position: fixed;
   top: 50%;
@@ -105,49 +105,49 @@ main .button .modal {
   z-index: 1;
 }
 
-form {
+body main .button .modal form {
   backdrop-filter: blur(20px);
   background-color: transparent;
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid #0000FF; */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 90px 100px #0000FF;
 }
-label {
+
+body main .button .modal form label {
   display: block;
   color: #ffb300;
   font-weight: bold;
   margin-top: 10px;
 }
-input, textarea {
+body main .button .modal form input, textarea {
   display: block;
   width: 100%;
   border: 1px solid #0000FF;
   border-radius: 5px;
   padding: 5px;
 }
-input[type="submit"] {
+body main .button .modal form input[type="submit"] {
   background-color: #8EA2C6;
   color: white;
   cursor: pointer;
   font-size: 120%;
   margin-top: 20px;
 }
-input[type="submit"]:hover {
+body main .button .modal form input[type="submit"]:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
 
-main .button .modal .close-btn {
+body main .button .modal .close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
 }
 
-#overlay {
+body main .button #overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -158,270 +158,271 @@ main .button .modal .close-btn {
   z-index: 0;
 }
 
-main .button .modal a:target {
+body main .button .modal a:target {
   display: none;
 }
 
-main .sur-place {
+body main .sur-place {
   margin: 2%;
   border: solid 2px #176b87;
   border-radius: 10px;
   font-size: 10px;
 }
 
-main .sur-place .image-container {
+body main .sur-place .image-container {
   overflow: hidden;
   display: inline-block;
   position: relative;
 }
 
-main .sur-place .image-container {
+body main .sur-place .image-container {
   height: 200px;
 }
 
-main .sur-place .image-container .hover {
+body main .sur-place .image-container .hover {
   display: none;
 }
 
-main .sur-place .image-container .normal:hover {
+body main .sur-place .image-container .normal:hover {
   display: none;
 }
 
-main .sur-place .image-container img.normal:hover~.hover {
+body main .sur-place .image-container img.normal:hover~.hover {
   display: inline-block;
   border-radius: 25px;
   border: solid black;
 }
 
-main .sur-place h1 {
+body main .sur-place h1 {
   font-size: 34px;
   padding: 2%;
   color: #f8f9f1;
 }
 
-main .sur-place h2 {
+body main .sur-place h2 {
   font-size: 20px;
   padding: 3%;
   color: #053B50;
 }
 
-main .sur-place .arrondissements {
+body main .sur-place .arrondissements {
   display: flex;
   justify-content: space-around;
   position: relative;
 }
 
-main .sur-place .arrondissements img {
+body main .sur-place .arrondissements img {
   margin: 4% 0%;
   border: #0056b3 solid;
 }
 
-main .sur-place .arrondissements .un-sept {
+body main .sur-place .arrondissements .un-sept {
   display: none;
 }
 
-main .sur-place .arrondissements .un:hover {
+body main .sur-place .arrondissements .un:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .un:hover~.un-sept {
+body main .sur-place .arrondissements .un:hover~.un-sept {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .sur-place .arrondissements .deux-trois {
+body main .sur-place .arrondissements .deux-trois {
   display: none;
 }
 
-main .sur-place .arrondissements .deux:hover {
+body main .sur-place .arrondissements .deux:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .deux:hover~.deux-trois {
+body main .sur-place .arrondissements .deux:hover~.deux-trois {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .sur-place .arrondissements .quatre-cinq {
+body main .sur-place .arrondissements .quatre-cinq {
   display: none;
 }
 
-main .sur-place .arrondissements .quatre:hover {
+body main .sur-place .arrondissements .quatre:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .quatre:hover~.quatre-cinq {
+body main .sur-place .arrondissements .quatre:hover~.quatre-cinq {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .sur-place .arrondissements .six-huit {
+body main .sur-place .arrondissements .six-huit {
   display: none;
 }
 
-main .sur-place .arrondissements .six:hover {
+body main .sur-place .arrondissements .six:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .six:hover~.six-huit {
+body main .sur-place .arrondissements .six:hover~.six-huit {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .sur-place .arrondissements .neuf-dix {
+body main .sur-place .arrondissements .neuf-dix {
   display: none;
 }
 
-main .sur-place .arrondissements .neuf:hover {
+body main .sur-place .arrondissements .neuf:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .neuf:hover~.neuf-dix {
+body main .sur-place .arrondissements .neuf:hover~.neuf-dix {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .sur-place .arrondissements .onze-douze {
+body main .sur-place .arrondissements .onze-douze {
   display: none;
 }
 
-main .sur-place .arrondissements .onze:hover {
+body main .sur-place .arrondissements .onze:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .onze:hover~.onze-douze {
+body main .sur-place .arrondissements .onze:hover~.onze-douze {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .sur-place .arrondissements .treize-quatorze {
+body main .sur-place .arrondissements .treize-quatorze {
   display: none;
 }
 
-main .sur-place .arrondissements .treize:hover {
+body main .sur-place .arrondissements .treize:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .treize:hover~.treize-quatorze {
+body main .sur-place .arrondissements .treize:hover~.treize-quatorze {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .sur-place .arrondissements .quinze-seize {
+body main .sur-place .arrondissements .quinze-seize {
   display: none;
 }
 
-main .sur-place .arrondissements .quinze:hover {
+body main .sur-place .arrondissements .quinze:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .quinze:hover~.quinze-seize {
+body main .sur-place .arrondissements .quinze:hover~.quinze-seize {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 @media only screen and (max-width: 480px) {
-  main .gros-titre-contact img {
+  body main .gros-titre-contact img {
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  main .gros-titre-contact img {
+
+  body main .gros-titre-contact img {
     width: 100%;
   }
 
-  main .sur-place h1 {
+  body main .sur-place h1 {
     font-size: 50px;
   }
 
-  main .sur-place .image-container {
+  body main .sur-place .image-container {
     height: 300px;
   }
 
-  main .sur-place .image-container img {
+  body main .sur-place .image-container img {
     width: 400px;
   }
 
-  main .sur-place h2 {
+  body main .sur-place h2 {
     font-size: 35px;
   }
 
-  main .sur-place .arrondissements img {
+  body main .sur-place .arrondissements img {
     width: 450px;
   }
 
-  main .sur-place .arrondissements section img {
+  body main .sur-place .arrondissements section img {
     width: 300px;
   }
 
-  main .sur-place .arrondissements section p {
+  body main .sur-place .arrondissements section p {
     font-size: 15px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  main .gros-titre-contact img {
+  body main .gros-titre-contact img {
     width: 100%;
   }
 
-  main .sur-place h1 {
+  body main .sur-place h1 {
     font-size: 80px;
   }
 
-  main .sur-place .image-container {
+  body main .sur-place .image-container {
     height: 400px;
   }
 
-  main .sur-place .image-container img {
+  body main .sur-place .image-container img {
     width: 500px;
   }
 
-  main .sur-place .grid-query {
+  body main .sur-place .grid-query {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     font-size: 18px;
   }
 
-  main .sur-place .grid-query h2 {
+  body main .sur-place .grid-query h2 {
     font-size: 35px;
   }
 }
 
 @media only screen and (min-width: 1023px) {
-  main .gros-titre-contact img {
+  body main .gros-titre-contact img {
     width: 100%;
   }
 
-  main .sur-place h1 {
+  body main .sur-place h1 {
     font-size: 100px;
   }
 
-  main .sur-place .image-container {
+  body main .sur-place .image-container {
     height: 600px;
   }
 
-  main .sur-place .image-container img {
+  body main .sur-place .image-container img {
     width: 700px;
   }
 
-  main .sur-place .grid-query {
+  body main .sur-place .grid-query {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     font-size: 20px;
   }
 
-  main .sur-place .grid-query h2 {
+  body main .sur-place .grid-query h2 {
     font-size: 45px;
   }
 }

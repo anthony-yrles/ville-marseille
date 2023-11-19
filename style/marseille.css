@@ -82,11 +82,11 @@ body header .burger-menu {
   width: 0px;
 }
 
-#hamburger {
+body header .burger-menu #hamburger {
   display: none;
 }
 
-#hamburger-logo {
+body header .burger-menu #hamburger-logo {
   cursor: pointer;
   background: #053b50;
   display: block;
@@ -99,13 +99,13 @@ body header .burger-menu nav {
   overflow: hidden;
 }
 
-#hamburger-logo,
-nav {
+body header .burger-menu #hamburger-logo,
+body header .burger-menu nav {
   transition: 0.7s;
 }
 
-#hamburger:checked~#hamburger-logo,
-#hamburger:checked~nav {
+body header .burger-menu #hamburger:checked~#hamburger-logo,
+body header .burger-menu #hamburger:checked~nav {
   transform: translate(0px);
 }
 
@@ -157,7 +157,7 @@ body main h3 {
 
 
 ***********************************/
-main .gros-titre {
+body main .gros-titre {
   width: 100vw;
   height: auto;
   background-size: cover;
@@ -334,13 +334,6 @@ body footer {
   justify-content: space-between;
 }
 
-body footer img {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 3%;
-  margin: auto;
-}
-
 body footer .icon-footer {
   display: flex;
   justify-content: space-around;
@@ -377,7 +370,7 @@ body footer .contact a {
     width: 10px;
   }
 
-  #hamburger-logo {
+  body header .burger-menu #hamburger-logo {
     width: 90px;
     transform: translateX(-70px);
     padding: 5px;
@@ -411,7 +404,6 @@ body footer .contact a {
   body main .container .container-scroll .article-scroll p {
     font-size: 0.8em;
   }
-
 }
 
 /********** Media Query ***********/
@@ -427,7 +419,7 @@ body footer .contact a {
     height: 15px;
   }
 
-  #hamburger-logo {
+  body header .burger-menu #hamburger-logo {
     width: 135px;
     transform: translateX(-115px);
     padding: 7.5px;
@@ -445,7 +437,7 @@ body footer .contact a {
 
   /*********** MAIN **********/
 
-  main .gros-titre img {
+  body main .gros-titre img {
     width: 100%;
   }
 
@@ -465,27 +457,27 @@ body footer .contact a {
 
   /********** Footer ***********/
 
-  footer {
+  body footer {
     background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
     height: 200px;
   }
 
-  footer .icon-footer img {
+  body footer .icon-footer img {
     width: 45px;
     margin-bottom: 5%;
   }
 
-  footer .icon-footer .plan img {
+  body footer .icon-footer .plan img {
     width: 25px;
     margin-left: 15px;
   }
 
-  footer .contact {
+  body footer .contact {
     font-size: 12px;
     flex-direction: column;
   }
 
-  footer .contact a {
+  body footer .contact a {
     padding: 4%;
   }
 }
@@ -503,7 +495,7 @@ body footer .contact a {
     height: 25px;
   }
 
-  #hamburger-logo {
+  body header .burger-menu #hamburger-logo {
     width: 202.5px;
     transform: translateX(-187.5px);
     padding: 11.25px;
@@ -522,7 +514,7 @@ body footer .contact a {
 
   /*********** MAIN **********/
 
-  main .gros-titre img {
+  body main .gros-titre img {
     width: 100%;
   }
 
@@ -541,31 +533,22 @@ body footer .contact a {
   }
 
   /********** Footer ***********/
-  footer {
+  body footer {
     height: 300px;
   }
 
-  footer img {
-    width: 150px;
-  }
-
-  footer .icon-footer img {
+  body footer .icon-footer img {
     width: 70px;
   }
 
-  footer .icon-footer .plan img {
+  body footer .icon-footer .plan img {
     width: 35px;
     margin-left: 25px;
   }
 
-  footer .contact {
+  body footer .contact a{
     font-size: 15px;
     flex-direction: row;
-  }
-
-  footer p {
-    font-size: 16px;
-    text-align: center;
   }
 }
 
@@ -582,7 +565,7 @@ body footer .contact a {
     height: 30px;
   }
 
-  #hamburger-logo {
+  body header .burger-menu #hamburger-logo {
     width: 303.75px;
     transform: translateX(-286.25px);
     padding: 16.87px;
@@ -603,23 +586,9 @@ body footer .contact a {
     width: 168.75px;
   }
 
-  body header .frise {
-    background-image: url(../assets/accueil/panorama-normal.jpg);
-    height: 337.5px;
-  }
-
-  body header .frise img {
-    width: 73.125px;
-  }
-
-  body header .frise input {
-    height: 60px;
-    font-size: 40px;
-  }
-
   /*********** MAIN **********/
 
-  main .gros-titre img {
+  body main .gros-titre img {
     width: 100%;
   }
 
@@ -641,29 +610,23 @@ body footer .contact a {
     font-size: 1.8em;
   }
 
-
-
   /********** Footer ***********/
-  footer {
+  body footer {
     background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
     background-size: cover;
     height: 600px;
   }
 
-  footer img {
-    width: 150px;
-  }
-
-  footer .icon-footer img {
+  body footer .icon-footer img {
     width: 90px;
   }
 
-  footer .icon-footer .plan img {
+  body footer .icon-footer .plan img {
     width: 50px;
     margin-left: 35px;
   }
 
-  footer .contact {
+  body footer .contact a{
     font-size: 17px;
     flex-direction: row;
   }
@@ -680,7 +643,7 @@ body footer .contact a {
     height: 50px;
   }
 
-  #hamburger-logo {
+  body header .burger-menu #hamburger-logo {
     width: 303.75px;
     transform: translateX(-286.25px);
     padding: 16.87px;
@@ -701,23 +664,9 @@ body footer .contact a {
     width: 168.75px;
   }
 
-  body header .frise {
-    background-image: url(../assets/accueil/panorama-normal.jpg);
-    height: 337.5px;
-  }
-
-  body header .frise img {
-    width: 73.125px;
-  }
-
-  body header .frise input {
-    height: 60px;
-    font-size: 40px;
-  }
-
   /*********** MAIN **********/
 
-  main .gros-titre img {
+  body main .gros-titre img {
     width: 100%;
   }
 

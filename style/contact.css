@@ -9,6 +9,16 @@ main .button {
   margin: 3%;
 }
 
+main .gros-titre-contact {
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: static;
+}
+
 main .button .button-86 {
   all: unset;
   width: 100px;
@@ -147,7 +157,7 @@ main .sur-place .image-container .normal:hover {
   display: none;
 }
 
-main .sur-place .image-container img.normal:hover ~ .hover {
+main .sur-place .image-container img.normal:hover~.hover {
   display: inline-block;
   border-radius: 25px;
   border: solid black;
@@ -164,6 +174,7 @@ main .sur-place h2 {
   padding: 3%;
   color: #64ccc5;
 }
+
 main .sur-place .arrondissements {
   display: flex;
   justify-content: space-around;
@@ -183,7 +194,7 @@ main .sur-place .arrondissements .un:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .un:hover ~ .un-sept {
+main .sur-place .arrondissements .un:hover~.un-sept {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -197,7 +208,7 @@ main .sur-place .arrondissements .deux:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .deux:hover ~ .deux-trois {
+main .sur-place .arrondissements .deux:hover~.deux-trois {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -211,7 +222,7 @@ main .sur-place .arrondissements .quatre:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .quatre:hover ~ .quatre-cinq {
+main .sur-place .arrondissements .quatre:hover~.quatre-cinq {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -225,7 +236,7 @@ main .sur-place .arrondissements .six:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .six:hover ~ .six-huit {
+main .sur-place .arrondissements .six:hover~.six-huit {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -239,7 +250,7 @@ main .sur-place .arrondissements .neuf:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .neuf:hover ~ .neuf-dix {
+main .sur-place .arrondissements .neuf:hover~.neuf-dix {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -253,7 +264,7 @@ main .sur-place .arrondissements .onze:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .onze:hover ~ .onze-douze {
+main .sur-place .arrondissements .onze:hover~.onze-douze {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -267,7 +278,7 @@ main .sur-place .arrondissements .treize:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .treize:hover ~ .treize-quatorze {
+main .sur-place .arrondissements .treize:hover~.treize-quatorze {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -281,16 +292,23 @@ main .sur-place .arrondissements .quinze:hover {
   display: none;
 }
 
-main .sur-place .arrondissements .quinze:hover ~ .quinze-seize {
+main .sur-place .arrondissements .quinze:hover~.quinze-seize {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 @media only screen and (max-width: 480px) {
+  main .gros-titre-contact img {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+  main .gros-titre-contact img {
+    width: 100%;
+  }
+
   main .sur-place h1 {
     font-size: 50px;
   }
@@ -321,6 +339,10 @@ main .sur-place .arrondissements .quinze:hover ~ .quinze-seize {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main .gros-titre-contact img {
+    width: 100%;
+  }
+
   main .sur-place h1 {
     font-size: 80px;
   }
@@ -339,12 +361,17 @@ main .sur-place .arrondissements .quinze:hover ~ .quinze-seize {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     font-size: 18px;
   }
+
   main .sur-place .grid-query h2 {
     font-size: 35px;
   }
 }
 
 @media only screen and (min-width: 1023px) {
+  main .gros-titre-contact img {
+    width: 100%;
+  }
+
   main .sur-place h1 {
     font-size: 100px;
   }

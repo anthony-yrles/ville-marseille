@@ -6,6 +6,16 @@ body main {
   box-sizing: border-box;
 }
 
+main .gros-titre-plage {
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: static;
+}
+
 body main h1 {
   text-align: center;
   font-size: 40px;
@@ -46,7 +56,18 @@ body main .grid-plages .plage-prado section ul {
   list-style: none;
 }
 
+@media only screen and (max-width: 480px) {
+  main .gros-titre-plage img {
+      width: 100%;
+  }
+}
+
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  main .gros-titre-plage img {
+    width: 100%;
+  }
+
   main .plage-prado .description {
     margin-bottom: 20px;
   }
@@ -75,6 +96,7 @@ body main .grid-plages .plage-prado section ul {
 }
 
 @media only screen and (min-width: 768px) {
+
   body main .grid-plages {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,5 +128,17 @@ body main .grid-plages .plage-prado section ul {
 
   main .grid-plages .plage-prado section li {
     font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main .gros-titre-plage img {
+      width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  main .gros-titre-plage img {
+      width: 100%;
   }
 }

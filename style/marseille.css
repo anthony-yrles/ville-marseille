@@ -134,15 +134,20 @@ body main {
 
 body main h1,
 body main h2 {
+  width: 50%;
+  margin-left: 25%;
+  font-size: 3vw;
+  background-color: #053B50;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+}
+
+body main h3 {
   display: flex;
   font-size: 35px;
   color: #176b87;
   justify-content: center;
-}
-
-body main h2 {
-  font-size: 25px;
-  margin-top: 20px;
 }
 
 /**********************************
@@ -159,13 +164,14 @@ main .gros-titre {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  position: static; 
+  position: static;
 }
 
 body main .container {
   display: flex;
   overflow-x: auto;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 body main .container .container-scroll {
@@ -222,6 +228,7 @@ body main .container .container-scroll .article-scroll p::-webkit-scrollbar {
 
 body main .match {
   background-color: #053B50;
+  margin-top: 20px;
 }
 
 body main .match .container-scroll .article-scroll {
@@ -233,12 +240,14 @@ body main .match .container-scroll .article-scroll h2 {
   font-size: 35px;
 }
 
-body main .match .container-scroll .article-scroll h2 span:first-child {
+body main .match .container-scroll .article-scroll h3 span:first-child {
   color: #0b3fa1;
+  padding-right: 10px;
 }
 
-body main .match .container-scroll .article-scroll h2 span:last-child {
+body main .match .container-scroll .article-scroll h3 span:last-child {
   color: #af3817;
+  padding-left: 10px;
 }
 
 
@@ -313,7 +322,7 @@ body main .match .container-scroll .article-scroll p {
 
 ***********************************/
 
-footer {
+body footer {
   position: relative;
   background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
   background-repeat: no-repeat;
@@ -325,14 +334,14 @@ footer {
   justify-content: space-between;
 }
 
-footer img {
+body footer img {
   display: flex;
   justify-content: space-around;
   padding-top: 3%;
   margin: auto;
 }
 
-footer .icon-footer {
+body footer .icon-footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -341,7 +350,7 @@ footer .icon-footer {
   margin-bottom: 5%;
 }
 
-footer .contact {
+body footer .contact {
   display: flex;
   flex-direction: row;
   font-size: 6px;
@@ -349,7 +358,7 @@ footer .contact {
   margin-bottom: 5%;
 }
 
-footer .contact a {
+body footer .contact a {
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
@@ -383,9 +392,26 @@ footer .contact a {
     padding: 10px;
   }
 
-  main .gros-titre img {
+  /*********** MAIN **********/
+
+  body main .gros-titre img {
     width: 100%;
   }
+
+  body main h1,
+  body main h2 {
+    font-size: 1.3em;
+  }
+
+  body main .container .container-scroll .article-scroll h3 {
+    padding-top: 10px;
+    font-size: 1.2em;
+  }
+
+  body main .container .container-scroll .article-scroll p {
+    font-size: 0.8em;
+  }
+
 }
 
 /********** Media Query ***********/
@@ -417,13 +443,24 @@ footer .contact a {
     padding: 15px;
   }
 
-  body main h1 {
-    font-size: 70px;
-    margin-top: 20px;
-  }
+  /*********** MAIN **********/
 
   main .gros-titre img {
     width: 100%;
+  }
+
+  body main h1,
+  body main h2 {
+    font-size: 1.7em;
+  }
+
+  body main .container .container-scroll .article-scroll h3 {
+    padding-top: 10px;
+    font-size: 1.4em;
+  }
+
+  body main .container .container-scroll .article-scroll p {
+    font-size: 1em;
   }
 
   /********** Footer ***********/
@@ -439,7 +476,8 @@ footer .contact a {
   }
 
   footer .icon-footer .plan img {
-    width: 30px;
+    width: 25px;
+    margin-left: 15px;
   }
 
   footer .contact {
@@ -482,18 +520,27 @@ footer .contact a {
     font-size: 2em;
   }
 
-  body main h1 {
-    font-size: 95px;
-    margin-top: 30px;
-  }
+  /*********** MAIN **********/
 
   main .gros-titre img {
     width: 100%;
   }
 
+  body main h1,
+  body main h2 {
+    font-size: 2.5em;
+  }
+
+  body main .container .container-scroll .article-scroll h3 {
+    padding-top: 10px;
+    font-size: 2em;
+  }
+
+  body main .container .container-scroll .article-scroll p {
+    font-size: 1.3em;
+  }
+
   /********** Footer ***********/
-
-
   footer {
     height: 300px;
   }
@@ -507,7 +554,8 @@ footer .contact a {
   }
 
   footer .icon-footer .plan img {
-    width: 40px;
+    width: 35px;
+    margin-left: 25px;
   }
 
   footer .contact {
@@ -523,7 +571,7 @@ footer .contact a {
 
 /********** Media Query ***********/
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1023px) and (max-width: 1700px) {
   /********** Header ***********/
 
   body header .bandeaux .reseaux img {
@@ -569,13 +617,31 @@ footer .contact a {
     font-size: 40px;
   }
 
-  body main .container {
-    justify-content: space-between;
-  }
+  /*********** MAIN **********/
 
   main .gros-titre img {
     width: 100%;
   }
+
+  body main h1,
+  body main h2 {
+    font-size: 3.2em;
+  }
+
+  body main .container {
+    justify-content: space-between;
+  }
+
+  body main .container .container-scroll .article-scroll h3 {
+    padding-top: 10px;
+    font-size: 2.5em;
+  }
+
+  body main .container .container-scroll .article-scroll p {
+    font-size: 1.8em;
+  }
+
+
 
   /********** Footer ***********/
   footer {
@@ -593,11 +659,85 @@ footer .contact a {
   }
 
   footer .icon-footer .plan img {
-    width: 60px;
+    width: 50px;
+    margin-left: 35px;
   }
 
   footer .contact {
     font-size: 17px;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  /********** Header ***********/
+
+  body header .bandeaux .reseaux img {
+    width: 50px;
+  }
+
+  body header .bandeaux .reseaux input {
+    height: 50px;
+  }
+
+  #hamburger-logo {
+    width: 303.75px;
+    transform: translateX(-286.25px);
+    padding: 16.87px;
+    font-size: 1.4em;
+  }
+
+  body header .burger-menu nav {
+    width: 337.5px;
+    transform: translateX(-337.5px);
+  }
+
+  body header .burger-menu nav a {
+    padding: 33.75px;
+    font-size: 2.5em;
+  }
+
+  body header .bandeau img {
+    width: 168.75px;
+  }
+
+  body header .frise {
+    background-image: url(../assets/accueil/panorama-normal.jpg);
+    height: 337.5px;
+  }
+
+  body header .frise img {
+    width: 73.125px;
+  }
+
+  body header .frise input {
+    height: 60px;
+    font-size: 40px;
+  }
+
+  /*********** MAIN **********/
+
+  main .gros-titre img {
+    width: 100%;
+  }
+
+  /********** Footer ***********/
+
+  body footer {
+    height: 800px;
+  }
+
+  body footer .icon-footer img {
+    width: 150px;
+  }
+
+  body footer .icon-footer .plan img {
+    width: 80px;
+    margin-left: 50px;
+  }
+
+  body footer .contact {
+    font-size: 1.8em;
     flex-direction: row;
   }
 }

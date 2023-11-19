@@ -15,20 +15,20 @@ body main .container-droite {
     max-width: 70vw;
 }
 
-/* body main .container-droite .titre-principal {
+body main .container-droite .titre-principal {
     display: flex;
     flex-direction: column;
     justify-content: left;
     overflow: visible;
-    margin-top: 15%;
+    /* margin-top: 15%; */
     margin-bottom: 15%;
 }
 
-body main .container-droite .titre-principal h1 {
+/* body main .container-droite .titre-principal h1 {
     margin-right: 16%;
     font-size: 13vw;
     color: rgb(5, 59, 80);
-}
+} */
 
 body main .container-droite .titre-principal h2 {
     font-size: 3vw;
@@ -37,7 +37,7 @@ body main .container-droite .titre-principal h2 {
     padding-left: 27%;
     border-radius: 25px;
     color: white;
-} */
+}
 
 .gros-titre-histoire {
     width: 100vw;
@@ -172,6 +172,10 @@ body main .container-droite .container-histoire .citation p strong {
         font-size: 9px;
         color: #F8F9F1;
     }
+
+    .gros-titre-histoire img {
+        width: 100%;
+    }
 }
 
 /* Styles pour les écrans (mobiles) */
@@ -183,6 +187,10 @@ body main .container-droite .container-histoire .citation p strong {
 
     body main .container-droite .container-histoire section .titre-numero {
         transform: scale(0.6);
+    }
+
+    .gros-titre-histoire img {
+        width: 100%;
     }
 }
 
@@ -204,5 +212,15 @@ body main .container-droite .container-histoire .citation p strong {
 
     body main .container-droite .container-histoire .citation p {
         font-size: 10px;
+    }
+
+    .gros-titre-histoire img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .gros-titre-histoire img {
+        width: 100%;
     }
 }

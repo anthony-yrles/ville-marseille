@@ -41,6 +41,8 @@ body {
 
 body header {
   display: flex;
+  background: #053b50;
+
 }
 
 
@@ -150,6 +152,15 @@ body main h2 {
 
 
 ***********************************/
+main .gros-titre {
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: static; 
+}
 
 body main .container {
   display: flex;
@@ -354,7 +365,7 @@ footer .contact a {
   /********** Header ***********/
 
   body header .bandeaux .reseaux img {
-    width: 25px;
+    width: 10px;
   }
 
   #hamburger-logo {
@@ -371,6 +382,10 @@ footer .contact a {
   body header .burger-menu nav a {
     padding: 10px;
   }
+
+  main .gros-titre img {
+    width: 100%;
+  }
 }
 
 /********** Media Query ***********/
@@ -379,11 +394,11 @@ footer .contact a {
   /********** Header ***********/
 
   body header .bandeaux .reseaux img {
-    width: 35px;
+    width: 15px;
   }
 
   body header .bandeaux .reseaux input {
-    height: 35px;
+    height: 15px;
   }
 
   #hamburger-logo {
@@ -405,6 +420,10 @@ footer .contact a {
   body main h1 {
     font-size: 70px;
     margin-top: 20px;
+  }
+
+  main .gros-titre img {
+    width: 100%;
   }
 
   /********** Footer ***********/
@@ -439,11 +458,11 @@ footer .contact a {
   /********** Header ***********/
 
   body header .bandeaux .reseaux img {
-    width: 45px;
+    width: 25px;
   }
 
   body header .bandeaux .reseaux input {
-    height: 45px;
+    height: 25px;
   }
 
   #hamburger-logo {
@@ -466,6 +485,10 @@ footer .contact a {
   body main h1 {
     font-size: 95px;
     margin-top: 30px;
+  }
+
+  main .gros-titre img {
+    width: 100%;
   }
 
   /********** Footer ***********/
@@ -504,11 +527,11 @@ footer .contact a {
   /********** Header ***********/
 
   body header .bandeaux .reseaux img {
-    width: 55px;
+    width: 30px;
   }
 
   body header .bandeaux .reseaux input {
-    height: 55px;
+    height: 30px;
   }
 
   #hamburger-logo {
@@ -548,6 +571,10 @@ footer .contact a {
 
   body main .container {
     justify-content: space-between;
+  }
+
+  main .gros-titre img {
+    width: 100%;
   }
 
   /********** Footer ***********/

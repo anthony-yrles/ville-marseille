@@ -1,4 +1,4 @@
-body main{
+body main {
   font-family: orkney;
   background-image: url("../assets/photo-rando/marseille-calanque.jpg");
   background-size: cover;
@@ -7,13 +7,22 @@ body main{
   margin: 0;
 }
 
+main .gros-titre-rando {
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: static; 
+}
 
-body main h1 {
+/* body main h1 {
   color: #333;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-}
+} */
 
 body main .grid-container {
   width: 90%;
@@ -74,20 +83,39 @@ main .grid-container .grid-item .image-container::-webkit-scrollbar-track {
   background-color: #f0f0f0;
 }
 
+
 /********** Media Query ***********/
+@media only screen and (max-width: 480px) {
+  main .gros-titre-rando img {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   body main .grid-item {
     padding: 20px;
   }
+
+  main .gros-titre-rando img {
+    width: 100%;
+  }
 }
 
 /********** Media Query ***********/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main .gros-titre-rando img {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 1023px) {
   body main .grid-container .grid-item {
     grid-template-columns: 1fr 1fr;
     margin: 20px auto;
+  }
+
+  main .gros-titre-rando img {
+    width: 100%;
   }
 }
 

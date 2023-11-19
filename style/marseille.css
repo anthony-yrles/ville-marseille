@@ -80,6 +80,7 @@ body header .bandeaux .reseaux input {
 body header .burger-menu {
   position: fixed;
   width: 0px;
+  z-index: 9999;
 }
 
 body header .burger-menu #hamburger {

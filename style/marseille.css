@@ -304,10 +304,14 @@ body main .match .container-scroll .article-scroll p {
 
 footer {
   position: relative;
-  background-image: url(../assets/accueil/fondfootermini.jpg);
+  background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 135px;
+  background-position: center bottom;
+  min-height: 620px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 footer img {
@@ -322,15 +326,26 @@ footer .icon-footer {
   justify-content: space-around;
   align-items: flex-end;
   padding: 4% 0% 1% 0%;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
-footer p {
+footer .contact {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  font-size: 8px;
+  flex-direction: row;
+  font-size: 6px;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+footer .contact a {
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+  color: #f8f9f1;
+  font-weight: 600;
   text-align: center;
-  padding: 1%;
 }
 
 /********** Media Query ***********/
@@ -395,25 +410,26 @@ footer p {
   /********** Footer ***********/
 
   footer {
-    background-image: url(../assets/accueil/fondfooter.jpg);
-    height: 180px;
+    background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
+    height: 200px;
   }
 
   footer .icon-footer img {
     width: 45px;
-  }
-
-  footer .icon-footer .oreille img {
-    width: 22.5px;
+    margin-bottom: 5%;
   }
 
   footer .icon-footer .plan img {
     width: 30px;
   }
 
-  footer p {
+  footer .contact {
     font-size: 12px;
-    text-align: center;
+    flex-direction: column;
+  }
+
+  footer .contact a {
+    padding: 4%;
   }
 }
 
@@ -454,6 +470,7 @@ footer p {
 
   /********** Footer ***********/
 
+
   footer {
     height: 300px;
   }
@@ -463,15 +480,16 @@ footer p {
   }
 
   footer .icon-footer img {
-    width: 90px;
-  }
-
-  footer .icon-footer .oreille img {
-    width: 45px;
+    width: 70px;
   }
 
   footer .icon-footer .plan img {
-    width: 60px;
+    width: 40px;
+  }
+
+  footer .contact {
+    font-size: 15px;
+    flex-direction: row;
   }
 
   footer p {
@@ -533,10 +551,10 @@ footer p {
   }
 
   /********** Footer ***********/
-
   footer {
-    background-image: url(../assets/accueil/fondfooter.jpg);
-    height: 400px;
+    background-image: url(../assets/photo-histoire/skyline-footer-2.jpg);
+    background-size: cover;
+    height: 600px;
   }
 
   footer img {
@@ -544,19 +562,15 @@ footer p {
   }
 
   footer .icon-footer img {
-    width: 120px;
-  }
-
-  footer .icon-footer .oreille img {
-    width: 72.5px;
-  }
-
-  footer .icon-footer .plan img {
     width: 90px;
   }
 
-  footer p {
-    font-size: 18px;
-    text-align: center;
+  footer .icon-footer .plan img {
+    width: 60px;
+  }
+
+  footer .contact {
+    font-size: 17px;
+    flex-direction: row;
   }
 }

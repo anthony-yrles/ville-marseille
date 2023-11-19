@@ -1,9 +1,10 @@
 body main {
-    background: linear-gradient(to top right, #ffffff, #0091f1);
+    background-color: #F8F9F1 ;
+    /* background: linear-gradient(to top right, #ffffff, #0091f1); */
     margin: 0;
     padding: 0;
     text-align: center;
-    color: #dbd6d6;
+    color: #053B50 ;
 }
 
 body main h1 {
@@ -11,13 +12,23 @@ body main h1 {
     margin-top: 20px;
     font-size: 1.5em;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px #053B50;
+}
+
+main .gros-titre-parc {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: static; 
 }
 
 body main .boite-blanche {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #F8F9F1 ;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     overflow: hidden;
@@ -40,7 +51,7 @@ body main .boite-blanche h2 {
     text-align: center;
     font-size: 2em;
     margin: 15px 0;
-    color: #d1caca;
+    color: #F8F9F1;
 }
 
 /********** Media Query ***********/
@@ -49,7 +60,7 @@ body main .boite-blanche h2 {
     body main .boite-blanche {
         width: 90%;
         height: 140%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px #053B50;
     }
 
     body main .boite-blanche h2,
@@ -61,21 +72,25 @@ body main .boite-blanche h2 {
     body main .boite-blanche p {
         font-size: 1.5em;
         font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        color: #268be4;
+        /* text-shadow: 1px 1px 2px #053B50; */
+        color: #f8f9f1;
     }
-
+    
     body main .boite-blanche p {
         font-size: 1em;
     }
-
+    
     body main .inverse h2,
     body main .inverse p {
-        color: #dbd6d6;
+        color: #053B50;
     }
 
     body main .boite-blanche:nth-child(odd) {
-        background-color: #268be4;
+        background-color: #053B50;
+    }
+
+    main .gros-titre-parc img {
+        width: 100%;
     }
 }
 
@@ -85,7 +100,7 @@ body main .boite-blanche h2 {
     body main .boite-blanche {
         width: 90%;
         height: 140%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px #053B50;
     }
 
     body main .boite-blanche h2,
@@ -97,22 +112,26 @@ body main .boite-blanche h2 {
     body main .boite-blanche p {
         font-size: 1.5em;
         font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        color: #268be4;
+        /* text-shadow: 1px 1px 2px #053B50; */
+        color: #f8f9f1;
     }
-
+    
     body main .boite-blanche p {
         font-size: 1em;
     }
-
+    
     body main .inverse h2,
     body main .inverse p {
-        color: #dbd6d6;
+        color: #053B50;
     }
 
 
     body main .boite-blanche:nth-child(odd) {
-        background-color: #268be4;
+        background-color: #053B50;
+    }
+
+    main .gros-titre-parc img {
+        width: 100%;
     }
 }
 
@@ -122,8 +141,8 @@ body main .boite-blanche h2 {
     body main .boite-blanche {
         width: 90%;
         height: 140%;
-        color: #dbd6d6;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        color: #f8f9f1;
+        box-shadow: 0 0 10px #053B50;
     }
 
     body main .boite-blanche h2,
@@ -135,31 +154,36 @@ body main .boite-blanche h2 {
     body main .boite-blanche p {
         font-size: 1.5em;
         font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        color: #268be4
+        /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
+        color: #F8F9F1;
     }
-
+    
     body main .boite-blanche p {
         font-size: 1em;
     }
-
+    
     body main .inverse h2,
     body main .inverse p {
-        color: #ffffff;
+        color: #053B50
     }
 
     body main .boite-blanche:nth-child(odd) {
-        background-color: #268be4;
+        background-color: #053B50;
+    }
+
+    main .gros-titre-parc img {
+        width: 100%;
     }
 }
 
 /********** Media Query ***********/
 
+
 @media only screen and (min-width: 1023px) {
     body main .boite-blanche {
         width: 85%;
         flex-direction: row;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 20px #053B50;
     }
 
     body main .boite-blanche:hover {
@@ -183,23 +207,27 @@ body main .boite-blanche h2 {
     body main .boite-blanche h2,
     body main .boite-blanche p {
         font-size: 1.8em;
-        color: #268be4;
+        color: #053B50;
         font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        /* text-shadow: 2px 2px 4px #053B50; */
     }
 
     body main .boite-blanche p {
         font-size: 1em;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        /* text-shadow: 1px 1px 2px #053B50; */
     }
 
     body main .inverse {
         flex-direction: row-reverse;
-        background-color: #26a2e4;
+        background-color: #053B50;
     }
 
     body main .boite-blanche.inverse h2,
     body main .boite-blanche.inverse p {
         color: #fff;
+    }
+
+    .gros-titre-parc img {
+        width: 100%;
     }
 }

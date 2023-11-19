@@ -15,7 +15,7 @@ body main .container-droite {
     max-width: 70vw;
 }
 
-body main .container-droite .titre-principal {
+/* body main .container-droite .titre-principal {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -37,8 +37,17 @@ body main .container-droite .titre-principal h2 {
     padding-left: 27%;
     border-radius: 25px;
     color: white;
-}
+} */
 
+main .gros-titre-histoire {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: static; 
+}
 
 body main .container-droite .container-histoire {
     margin-top: 15%;

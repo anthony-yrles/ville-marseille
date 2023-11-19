@@ -1,5 +1,5 @@
 body main {
-    background-image: url('../assets/photo-musee/Plan\ de\ travail\ 1.jpg');
+    background-image: url('../assets/photo-musee/Fond-histoire.jpg');
     display: flex;
     background-attachment: fixed;
     background-size: cover;
@@ -39,7 +39,7 @@ body main .container-droite .titre-principal h2 {
     color: white;
 } */
 
-main .gros-titre-histoire {
+.gros-titre-histoire {
     width: 100vw;
     height: auto;
     background-size: cover;

@@ -64,7 +64,7 @@
 
     <main>
         <section class="gros-titre-contact">
-            <img src="./assets/contact/contact.jpg">
+            <img src="./assets/contact/contact.jpg" alt="titre contact">
         </section>
         <section class="button">
             <button class="button-86" role="button"><a href="#contactModal">Nous contacter</a></button>
@@ -72,13 +72,12 @@
                 <span class="close-btn"><a href="#">Fermer</a></span>
                 <h1>Formulaire de contact</h1>
                 <form>
-                    <!-- Vos champs de formulaire ici -->
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-
+                    <label for="name">Votre nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                    <label for="email">Votre email :</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    <label for="reason">Votre message:</label>
+                    <textarea id="reason" name="reason" placeholder="Entrez votre raison" rows="5" required></textarea>
                     <input type="submit" value="Envoyer">
                 </form>
             </section>

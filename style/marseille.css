@@ -2,24 +2,28 @@
   font-family: "orkney";
   src: url("../assets/orkney-regular.otf");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "orkney";
   src: url("../assets/orkney-bold.otf");
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "orkney";
   src: url("../assets/orkney-medium.otf");
   font-style: medium;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "orkney";
   src: url("../assets/orkney-light.otf");
   font-style: light;
+  font-display: swap;
 }
 
 * {
@@ -147,7 +151,7 @@ body main .faux-h1 {
 body main h3 {
   display: flex;
   font-size: 35px;
-  color: #176b87;
+  color: #f8f9f1;
   justify-content: center;
 }
 
@@ -246,6 +250,7 @@ body main .match .container-scroll .article-scroll {
 body main .match .container-scroll .article-scroll h3 {
   text-align: center;
   font-size: 35px;
+  color: #053B50;
 }
 
 body main .match .container-scroll .article-scroll h3 span:first-child {
